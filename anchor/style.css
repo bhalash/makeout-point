@@ -99,7 +99,6 @@ select {
     color: #343537;
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-size: 0.95em;
-    font-weight: 600;
     line-height: 1.4em;
     text-align: left;
 }
@@ -142,7 +141,20 @@ time {
 }
 
 a:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid;
+}
+
+/*
+ * Images and Embeds
+ */
+
+embed,
+img,
+iframe {
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%;
 }
 
 /*
@@ -179,7 +191,6 @@ pre {
     color: #343537;
     font-family: 'Source Code Pro', 'Courier New', Courier, monospace; 
     font-size: 0.9em;
-    font-weight: 600;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     -webkit-font-smoothing: antialiased;
@@ -294,6 +305,10 @@ header h4 {
     border-radius: 50%;
 }
 
+header a:hover {
+    border-bottom: none;
+}
+
 /*
  * Navigation Menu
  */
@@ -347,21 +362,9 @@ article blockquote {
     font-size: 0.89em;
 }
 
-article embed,
-article img,
-article iframe {
-    height: auto;
-    margin-bottom: 10px;
-    max-width: 100%;
-}
-
 article ol,
 article ul {
     margin-left: 30px;
-}
-
-article a:hover {
-    text-decoration: underline;
 }
 
 /*
