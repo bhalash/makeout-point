@@ -6,23 +6,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
 <title>aAnchor Theme</title>
 <link rel="stylesheet" type="text/css" href="anchor/style.css" />
-<link rel="stylesheet" type="text/css" href="anchor/prettify/hemisu/light/prettify.css" />
 </head>
-<body onload="prettyPrint()">
+<body>
     <header>
         <div class="header-banner">
-            <div class="header-text">
-                <h4>site title</h4>
+            <div class="header-title">
+                <h4><a href="javascript:void(0)">super-duper long blog title</a></h4>
             </div>
         </div>
         <div class="header-logo-wrap">
-            <div class="header-logo"><a href="javascript:void(0)"></a></div>
+            <div class="header-logo"><a href="https://www.twitter.com"></a></div>
         </div>
     </header>
     <div class="content-wrap">
         <div class="content">
             <article>
-                <h3 class="post-title"><a href="javascript:void(0)">Post Title Goes Here</a></h3>
+                <h3 class="post-title"><a href="javascript:void(0)">I feel strangely proud about my first recursive function</a></h3>
+                <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
+                <pre class=”prettyprint [lang-html|linenums:1]”>function left(amount, obj) {
+    $(obj).children().each(function() {
+        if ($(this).children().length &gt; 0) {
+            left(amount, this);
+        } else {
+            $(this).css('left', parseInt($(this).css('left')) - amount + 'px');
+            wrap(this);
+        }
+    });
+}
+
+function wrap(obj) {
+    var x = $(obj).offset().left;
+    var y = $(obj).offset().top;
+    var w = $(obj).width();
+    var h = $(obj).height();
+
+    if (y + h &lt; 0) {
+        $(obj).css('top', $(window).height() + 'px');
+    } else if (x + w &lt; 0) {
+        $(obj).css('left', $(window).width() + 'px'); 
+    } else if (x &gt; $(window).width()) {
+        $(obj).css('left', 0 - w + 'px');
+    } else if (y &gt; $(window).height()) {
+        $(obj).css('top', 0 - h + 'px');
+    }
+}</pre>
+                <p class="post-info"><a href="javascript:void(0)">3 comments</a></p>
+            </article>
+            <article>
+                <h3 class="post-title"><a href="javascript:void(0)">Yep, empty</a></h3>
+                <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
+                <p>Our universe is big, empty, and dark. It isn&#8217;t even <em>cold</em> per se, because only an object can can have a temperature, and space is by definition the absense of one. When physicists and astronomers talk about the temperature, they don&#8217;t refer to the universe itself; instead they talk about the temperature of those pitiful things we&#8217;ve found in it. </p>
+                <p>Here is spot of lazy math: Stars come in all sizes. There are gargantuan hypergiants so diffuse that they are closer to convective hot nebula than the incandescent ball of plasma that lights our own skies. If you dropped one into where the sun sits now, its periphery would be way out in space halfway between the orbits of Jupiter and Saturn. </p>
+                <p>Opposite the hypergiants are petite neutron stars. These zombie star pack the mass Sol into a volume scarcely twenty kilometres across. If a neutron star popped into existence above Dublin, the locals would marvel at its tiny size in the nanoseconds before their utter obliteration.</p>
+                <p>There is a massive range of stars that lie between these extremes of volume: The red dwarfs and giants (no relation), the luminous blue giants and dark brown dwarfs, and yes, our sun. There are as many subtle variations as there are people on Earth. Every star has a personality, a face, and a fingerprint that is wholly unique.</p>
+                <p>But stars are people, with people you can take averages: Sum the total, then divide by the quantity.</p>
+                <ol>
+                    <li>Sol is an archetypical star. It's remarkably close to the average, with a diameter of 1,391,684 kilometres.</li>
+                    <li>There are an estimated 100,000,000,000 stars in our wholly average. Thank the isotropic principle for <em>that</em>.</li>
+                    <li>And there are an estimated 10,000,000,000 galaxies in the visible universe.</li>
+                    <li>One hundred billion stars each in ten billion galaxies. Each is about the same width as Sol.</li>
+                    <li>That gives us in the neighborhood of 1,000,000,000,000,000,000,000 stars in visible universe.</li>
+                    <li>And finally, there are 9,460,528,400,000 kilometres in one light year.</li>
+                </ol>
+                <pre>9460528400000 / 1391584 = 6797899</pre>
+                <p>Set touching end-to-end you can fit 6,797,899 stars average stars in a light year-long conga line. Now cube this conga line-multiply the length by the width by the height.</p>
+                <pre>6797899 * 6797899 * 6797899 = 314140639320426163699</pre>
+                <p>A cubic volume one light year on a side could hold 314,140,639,320,426,163,699 stars.</p>
+                <pre>314140639320426163699 / 1000000000000000000000 = 0.31414
+0.31414 * 100 = 31.41400
+31.41%</pre>
+                <p>That&#8217;s one-third of /all/ stars in our averaged visible universe. Repeat until you run out of stars.</p>
+                <p>You can fit every single star in the universe into the space between Sol and its nearest neighbor, Proxima Centauri. And the /rest/ of the baryonic matter in the universe would fit neatly into the gaps between the stars.</p>
+                <p>Dive into the hearts of a galaxy, or a globular cluster, or even our own asteroid belt. You&#8217;ll find empty with a low chance of excitement.</p>
+                <p class="post-info"><a href="javascript:void(0)">1 comment</a></p>
+            </article>
+            <article>
+                <h3 class="post-title"><a href="javascript:void(0)">Lorem Ipsum Novo Ordo Seclorum</a></h3>
+                <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
                 <p>This is a table:</p>
                 <table>
                     <tr>
@@ -47,12 +107,15 @@
                     </tr>
                 </table>
                 <p><a href="#">Lorem ipsum dolor</a> sit amet, <em>consectetur adipisicing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <del>in voluptate velit esse</del> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
                 <p>This paragraph has superset text: E = MC<sup>2</sup>.</p>
-                <p>This paragraph has subset text: When you have different base numbering systems together, it is common to differentiate them by appending a subset number with the base, e.g. <code>24<sub>10</sub> = 0000 1110<sub>2</sub></code>.</p>
+                <p>This paragraph has subset text: When you have different base numbering systems together, it is common to differentiate them by appending a subset number with the base, e.g. <code>27<sub>10</sub> = 0001 1011<sub>2</sub></code>.</p>
+                <pre>function decrementLightboxImage() {
+    cli -= (cli <= 0) ? 0 : 1; 
+    updateLightbox(galleryImages[clg][cli]);
+}</pre>
                 <pre>“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.”</pre>
                 <blockquote><a href="#">Lorem ipsum dolor</a> sit amet, <em>consectetur adipisicing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <del>in voluptate velit esse</del> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-                <p>This is a <code>&#60;code&#62;</code> block:</p>
+                <p>This is a <code>&#60;code&#62;</code> block inside of a paragraph:</p>
                 <p>
                     <code>
                     #!/bin/bash <br /><br />
@@ -80,19 +143,12 @@
                 </ul>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                 <p><a title="Lorem Ipsum" href="sample_posts/1.jpg"><img src="sample_posts/m/1.jpg" alt="Lorem Ipsum" /></a><br />
-                <p class="post-meta-bottom">
-                    <strong>Tagged:</strong> <a href="#">tag</a>, <a href="#">tag</a>, <a href="#">tag</a>, <a href="#">tag</a>, <a href="#">tag</a>, <a href="#">tag</a>
-                    <br />
-                    <strong>Categorized:</strong> <a href="#">category</a>, <a href="#">category</a>, <a href="#">category</a>
-                    <br />
-                    <strong>Admin:</strong> <a href="#">Edit post</a>
-                </p>
+                <p class="post-info"><a href="javascript:void(0)">0 comments</a></p>
             </article>
         </div>
     </div>
     <footer></footer>
     <script src="anchor/jquery-2.1.0.min.js"></script>
     <script src="anchor/functions.js"></script>
-    <script type="text/javascript" src="anchor/prettify/prettify.js"></script>
 </body>
 </html>
