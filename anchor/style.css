@@ -179,7 +179,7 @@ h6 {
 h2 { font-size: 2.25em; }
 h3 { font-size: 1.75em; }
 h4 { font-size: 1.65em; }
-h5 { font-size: 1.5em; } 
+h5 { font-size: 1.50em; } 
 h6 { font-size: 1.35em; }
 
 /*
@@ -200,13 +200,11 @@ pre {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    background: #343537;
     color: #fff;
-    background-color: #343537;
+    font-size: 0.75em;
+    overflow: hidden;
     padding: 10px;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
 }
 
 /*
