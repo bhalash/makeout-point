@@ -4,11 +4,11 @@
 
 @media screen {
   .str {
-    color: #bcd42a;
+    color: #c9e724;
   }
 
   .kwd {
-    color: #26a6a6;
+    color: #21bdbf;
   }
 
   .com {
@@ -20,7 +20,7 @@
   }
 
   .lit {
-    color: #bcd42a;
+    color: #c9e724;
   }
 
   .pun {
@@ -36,15 +36,15 @@
   }
 
   .tag {
-    color: #26a6a6;
+    color: #21bdbf;
   }
 
   .atn {
-    color: #bcd42a;
+    color: #c9e724;
   }
 
   .atv {
-    color: #ba3434;
+    color: #ec2525;
   }
 
   .dec {

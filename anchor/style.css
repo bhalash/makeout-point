@@ -94,7 +94,6 @@ label,
 li,
 option,
 p,
-pre,
 select { 
     color: #343537;
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
@@ -204,8 +203,11 @@ pre {
     box-sizing: border-box;
     background: #343537;
     color: #fff;
-    font-size: 0.75em;
+    font-size: 0.7em;
+    letter-spacing: 0;
+    line-height: 1.2em;
     overflow: hidden;
+    text-align: left;
     padding: 10px;
 }
 
@@ -242,10 +244,6 @@ tr:nth-child(even) {
     background-color: #f4b44f; 
 }
 
-tr:nth-child(odd) {
-    /* Kicking around colours. */
-}
-
 /*
  * Site Header
  */
@@ -279,11 +277,11 @@ header h4 {
 .header-logo-wrap {
     background-color: #fff;
     border-radius: 50%;
-    height: 80px;
+    height: 60px;
     margin: 0 auto;
-    margin-top: -40px;
+    margin-top: -30px;
     padding: 5px;
-    width: 80px;
+    width: 60px;
 }
 
 .header-logo {
@@ -314,14 +312,30 @@ header a:hover {
  */
 
 /* Button for drop-down menu. */
-.nav-button {
-    background: #343537 url('img/menu_light.png') no-repeat center center;
-    background-size: 40% auto;
+.search-button {
+    background: #343537 url('img/search.png') no-repeat center center;
+    background-size: 45% auto;
     border-radius: 50%;
-    height: 50px;
+    height: 45px;
     margin: 0 auto;
-    margin-bottom: 10px;
-    width: 50px;
+    margin-top: 15px;
+    width: 45px;
+}
+
+nav a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+nav a:hover {
+    border-bottom: none;
+}
+
+nav a:active {
+    border-radius: 50%;
+    background: #ba3434 url('img/search.png') no-repeat center center;
+    background-size: 45% auto;
 }
 
 /*
@@ -401,4 +415,72 @@ article ul {
 .post-info span {
     /* Edit post link. */
     float: right;
+}
+
+/*
+ * Instra-site Navigation
+ */
+
+.navigation {
+    margin: 0 auto;
+    overflow: auto;
+    width: 230px;
+}
+
+.navigation a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.navigation a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+.navigation span {
+    background: #343537;
+    color: #fff;
+    font-size: 0.85em;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.navigation span:active {
+    background: #ba3434; 
+}
+
+.navigation .previous {
+    float: left;
+}
+
+.navigation .next {
+    float: right;
+}
+
+/*
+ * Site Footer
+ */
+
+footer {
+    background: #343537;
+    /* Header uses margin to center, this uses padding. */
+    padding: 20px 0 20px 0;
+}
+
+footer a {
+    color: #ba3434;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ca4343;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.8em;
+    margin-bottom: 0;
+    text-align: center;
 }

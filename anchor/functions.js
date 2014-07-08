@@ -4,6 +4,9 @@ $(function() {
         $(this).addClass('prettyprint');
     });    
 
+    if ($('.content').height() < $(window).height())
+        $('.content').css('min-height', $(window).height() + 'px');
+
     // Remove underline from hyperlink images. 
     $('article a').each(function() {
         if ($(this).children('img').length > 0) {
