@@ -4,10 +4,12 @@
 <!-- Bless the Maker and His water. Bless the coming and going of Him. May His passage cleanse the world. May He keep the world for His people. -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
-<title>aAnchor Theme</title>
+<title>Anchor Theme</title>
+<!-- google-code-prettifier -->
+<link rel="stylesheet" type="text/css" href="anchor/prettify.css" />
 <link rel="stylesheet" type="text/css" href="anchor/style.css" />
 </head>
-<body>
+<body onload="prettyPrint()">
     <header>
         <div class="header-banner">
             <div class="header-title">
@@ -23,7 +25,7 @@
             <article>
                 <h3 class="post-title"><a href="javascript:void(0)">I feel strangely proud about my first recursive function</a></h3>
                 <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
-                <pre class=”prettyprint [lang-html|linenums:1]”>function left(amount, obj) {
+                <pre>function left(amount, obj) {
     $(obj).children().each(function() {
         if ($(this).children().length &gt; 0) {
             left(amount, this);
@@ -83,6 +85,16 @@ function wrap(obj) {
             <article>
                 <h3 class="post-title"><a href="javascript:void(0)">Lorem Ipsum Novo Ordo Seclorum</a></h3>
                 <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
+                <pre>&lt;header&gt;
+    &lt;div class="header-banner"&gt;
+        &lt;div class="header-title"&gt;
+            &lt;h4&gt;&lt;a href="javascript:void(0)"&gt;super-duper long blog title&lt;/a&gt;&lt;/h4&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="header-logo-wrap"&gt;
+        &lt;div class="header-logo"&gt;&lt;a href="https://www.twitter.com"&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;</pre>
                 <p>This is a table:</p>
                 <table>
                     <tr>
@@ -113,7 +125,7 @@ function wrap(obj) {
     cli -= (cli <= 0) ? 0 : 1; 
     updateLightbox(galleryImages[clg][cli]);
 }</pre>
-                <pre>“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.”</pre>
+                <pre>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</pre>
                 <blockquote><a href="#">Lorem ipsum dolor</a> sit amet, <em>consectetur adipisicing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <del>in voluptate velit esse</del> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
                 <p>This is a <code>&#60;code&#62;</code> block inside of a paragraph:</p>
                 <p>
@@ -130,16 +142,16 @@ function wrap(obj) {
                 </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat:</p>
                 <ol>
-                    <li>Four CSS content columns of even width.</li>
-                    <li>Each <a href="#">column separated by</a> an even margin.</li>
-                    <li>The parent container in turn separated from the viewport sides by the same margin.</li>
-                    <li>These margins should be constant no matter how the page is resized.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
                 </ol>
                 <ul>
-                    <li>Four CSS content columns of even width.</li>
-                    <li>Each <a href="#">column separated by</a> an even margin.</li>
-                    <li>The parent container in turn separated from the viewport sides by the same margin.</li>
-                    <li>These margins should be constant no matter how the page is resized.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
                 </ul>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                 <p><a title="Lorem Ipsum" href="sample_posts/1.jpg"><img src="sample_posts/m/1.jpg" alt="Lorem Ipsum" /></a><br />
@@ -149,6 +161,7 @@ function wrap(obj) {
     </div>
     <footer></footer>
     <script src="anchor/jquery-2.1.0.min.js"></script>
+    <script src="anchor/prettify/prettify.js"></script>
     <script src="anchor/functions.js"></script>
 </body>
 </html>
