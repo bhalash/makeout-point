@@ -85,7 +85,7 @@ p,
 pre,
 table,
 ul {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 blockquote,
@@ -173,7 +173,6 @@ h6 {
     font-weight: bold;
     letter-spacing: 0;
     text-align: left;
-    text-transform: uppercase;
 }
 
 h2 { font-size: 2.25em; }
@@ -190,10 +189,13 @@ code,
 pre { 
     color: #343537;
     font-family: 'Source Code Pro', 'Courier New', Courier, monospace; 
-    font-size: 0.9em;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     -webkit-font-smoothing: antialiased;
+}
+
+code {
+    font-size: 0.85em;
 }
 
 pre {
@@ -356,6 +358,10 @@ article a {
     font-weight: bold;
 }
 
+article a:hover {
+    color: #ca4343;
+}
+
 article blockquote {
     font-size: 0.89em;
 }
@@ -374,7 +380,7 @@ article ul {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 2px solid #343537;
-    /*padding: 0 0 0 40px;*/
+    padding: 0 0 3px 0;
     text-align: left;
 }
 
@@ -383,13 +389,16 @@ article ul {
 }
 
 .post-title a:hover {
-    text-decoration: none;
+    border-bottom: none;
+    color: inherit;
 }
 
 .post-info:after {
+    /* Clear the float from the span, below. */
     clear: both;
 }
 
 .post-info span {
+    /* Edit post link. */
     float: right;
 }
