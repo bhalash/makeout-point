@@ -259,19 +259,18 @@ header h4 {
     text-align: center;
 }
 
-.header-banner {
+header .banner {
     background: url('img/bluedawn.jpg') no-repeat left top;
-    background-size: 100% auto;
-    height: 100%;
+    background-size: 130% auto;
 }
 
-.header-title {
-    /*background-color: rgba(0,0,0,0.5);*/
+header .title {
+    background-color: rgba(0,0,0,0.5);
     height: 100%;
 }
 
 /* Logo */
-.header-logo-wrap {
+header .logo-wrap {
     background-color: #fff;
     border-radius: 50%;
     height: 60px;
@@ -281,7 +280,7 @@ header h4 {
     width: 60px;
 }
 
-.header-logo {
+header .logo {
     /* Avatar icon goes here. */
     background: #55acee url('img/social/twitter.png') no-repeat center center;
     background-size: 100% auto;
@@ -291,19 +290,23 @@ header h4 {
     width: 100%;
 }
 
-.header-logo:hover {
+header .logo:hover {
     /* Whatever social icon you want goes here. See img/social for the rest. */
     background: url('img/caira_avatar.jpg') no-repeat center center;
     background-size: 100% auto;
 }
 
-.header-logo a {
+header .logo a {
     border-radius: 50%;
 }
 
 /*
  * Navigation Menu
  */
+
+nav {
+    margin: 15px 0 15px 0;
+}
 
 nav a {
     display: block;
@@ -321,18 +324,20 @@ nav form {
 }
 
 nav form input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     box-sizing: border-box;
-    height: 30px;
+    height: 40px;
     padding-left: 3px;
     width: 100%;
 }
 
 /*
- *
+ * Navigation Menu Panes
  */
 
-.nav-menu {
-    margin-top: 20px;
+nav .panes {
+    margin-top: 7px;
     overflow: auto;
 }
 
@@ -341,17 +346,16 @@ nav ul {
     float: left;
     margin-bottom: 0;
     padding: 5px;
-    width: 33.33%;
+    width: 25%;
 }
 
 @media screen and (max-width: 800px) {
     nav ul {
-        width: 100%;
+        width: 50%;
     }
 }
 
 nav li {
-    background: #f14399;
     color: #fff;
     list-style-type: none;
     text-align: left;
@@ -363,38 +367,43 @@ nav li {
  */
 
 /* Button for drop-down menu. */
-.menu-button-wrap {
+nav .button-wrap {
     background-color: #fff;
     border-radius: 50%;
-    height: 40px;
+    height: 50px;
     margin: 0 auto;
-    padding: 5px;
-    width: 40px;
+    padding: 5px 5px 1px 5px;
+    width: 50px;
 }
 
-.menu-button {
-    background: #343537 url('img/menu_alt.png') no-repeat center center;
-    background-size: 60% auto;
+nav .button {
+    background: #343537 url('img/menu_burger.png') no-repeat center center;
+    background-size: 45% auto;
     border-radius: 50%;
     height: 100%;
     margin: 0 auto;
     width: 100%;
 }
 
-.menu-button:hover {
-    background: #ba3434 url('img/menu_alt.png') no-repeat center center;
-    background-size: 60% auto;
-    border-radius: 50%;
+nav .button:hover {
+    background: #ba3434 url('img/menu_burger.png') no-repeat center center;
+    background-size: 45% auto;
 }
 
 /*
  * Nav Menu Area
  */
 
-.menu {
+nav .menu-wrap {
+    background: #fff url('img/inset_top_arrow.svg') no-repeat center center;
+    background-size: auto 100%; 
+    display: none;
+    padding: 20px 0 0 0;
+}
+
+nav .menu {
     background: #343537;
     box-sizing: border-box;
-    display: none;
     margin: 0 auto;
     padding: 20px;
 }
@@ -470,7 +479,6 @@ article ul {
 
 .post-title a:hover {
     color: #F4B44F;
-    /*color: inherit;*/
 }
 
 .post-info{
@@ -530,7 +538,7 @@ article ul {
 
 footer {
     background: url('img/bluedawn.jpg') no-repeat left bottom;
-    background-size: 100% auto;
+    background-size: 130% auto;
     bottom: 0;
     /* Header uses margin to center, this uses padding. */
     /*padding: 20px 0 20px 0;*/
