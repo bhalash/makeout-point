@@ -11,16 +11,18 @@ $(function() {
 var menuIsOpen = false;
 
 function openMenu() {
-    $('.menu').slideDown();
+    $('nav .menu-wrap').slideDown();
+    $('nav .button').css('background-color', '#ba3434');
     menuIsOpen = true;
 }
 
 function closeMenu() {
-    $('.menu').slideUp();
+    $('nav .menu-wrap').slideUp();
+    $('nav .button').css('background-color', '#343537');
     menuIsOpen = false;
 }
 
-$('.menu-button').click(function() {
+$('nav .button').click(function() {
     if (!menuIsOpen) {
         openMenu();
     } else {
