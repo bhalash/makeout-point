@@ -140,8 +140,7 @@ time {
 }
 
 a:hover {
-    /*text-decoration: underline;*/
-    border-bottom: 2px solid;
+    text-decoration: underline;
 }
 
 /*
@@ -198,10 +197,8 @@ code {
 }
 
 pre {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     background: #343537;
+    box-sizing: border-box;
     color: #fff;
     font-size: 0.7em;
     letter-spacing: 0;
@@ -263,13 +260,13 @@ header h4 {
 }
 
 .header-banner {
-    background: url('img/bluedawn.jpg') no-repeat left 50%;
-    background-size: 120% auto;
+    background: url('img/bluedawn.jpg') no-repeat left top;
+    background-size: 100% auto;
     height: 100%;
 }
 
 .header-title {
-    background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(0,0,0,0.5);*/
     height: 100%;
 }
 
@@ -279,7 +276,7 @@ header h4 {
     border-radius: 50%;
     height: 60px;
     margin: 0 auto;
-    margin-top: -30px;
+    margin-top: -32.5px;
     padding: 5px;
     width: 60px;
 }
@@ -290,6 +287,7 @@ header h4 {
     background-size: 100% auto;
     border-radius: 50%;
     height: 100%;
+    transition: 0.4s background;
     width: 100%;
 }
 
@@ -303,39 +301,102 @@ header h4 {
     border-radius: 50%;
 }
 
-header a:hover {
-    border-bottom: none;
-}
-
 /*
  * Navigation Menu
  */
 
-/* Button for drop-down menu. */
-.search-button {
-    background: #343537 url('img/search.png') no-repeat center center;
-    background-size: 45% auto;
-    border-radius: 50%;
-    height: 45px;
-    margin: 0 auto;
-    margin-top: 15px;
-    width: 45px;
-}
-
 nav a {
     display: block;
     height: 100%;
+}
+
+/* 
+ * Site Search Form
+ */
+
+nav form {
+    border: 0;
+    outline: 0;
     width: 100%;
 }
 
-nav a:hover {
-    border-bottom: none;
+nav form input {
+    box-sizing: border-box;
+    height: 30px;
+    padding-left: 3px;
+    width: 100%;
 }
 
-nav a:active {
+/*
+ *
+ */
+
+.nav-menu {
+    margin-top: 20px;
+    overflow: auto;
+}
+
+nav ul {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 0;
+    padding: 5px;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul {
+        width: 100%;
+    }
+}
+
+nav li {
+    background: #f14399;
+    color: #fff;
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+}
+
+/*
+ * Menu Toggle Button
+ */
+
+/* Button for drop-down menu. */
+.menu-button-wrap {
+    background-color: #fff;
     border-radius: 50%;
-    background: #ba3434 url('img/search.png') no-repeat center center;
-    background-size: 45% auto;
+    height: 40px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 40px;
+}
+
+.menu-button {
+    background: #343537 url('img/menu_alt.png') no-repeat center center;
+    background-size: 60% auto;
+    border-radius: 50%;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.menu-button:hover {
+    background: #ba3434 url('img/menu_alt.png') no-repeat center center;
+    background-size: 60% auto;
+    border-radius: 50%;
+}
+
+/*
+ * Nav Menu Area
+ */
+
+.menu {
+    background: #343537;
+    box-sizing: border-box;
+    display: none;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /*
@@ -343,13 +404,14 @@ nav a:active {
  */
 
 .content-wrap {
-    margin: 40px 0 40px 0;
     width: 100%;
 }
 
 .content {
     margin: 0 auto;
     max-width: 1440px;
+    position: relative;
+    top: 0;
     width: 65%;
 }
 
@@ -372,6 +434,11 @@ article a {
     font-weight: bold;
 }
 
+article a img {
+    border: 2px solid #343537;
+    box-sizing: border-box;
+}
+
 article a:hover {
     color: #ca4343;
 }
@@ -390,26 +457,24 @@ article ul {
  */
 
 .post-title {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     border-bottom: 2px solid #343537;
+    box-sizing: border-box;
     padding: 0 0 3px 0;
     text-align: left;
 }
 
 .post-title a {
     color: #343537;
+    text-decoration: none;
 }
 
 .post-title a:hover {
-    border-bottom: none;
-    color: inherit;
+    color: #F4B44F;
+    /*color: inherit;*/
 }
 
-.post-info:after {
-    /* Clear the float from the span, below. */
-    clear: both;
+.post-info{
+    overflow: auto;
 }
 
 .post-info span {
@@ -434,7 +499,6 @@ article ul {
 }
 
 .navigation a:hover {
-    border-bottom: none;
     text-decoration: underline;
 }
 
@@ -464,9 +528,13 @@ article ul {
  */
 
 footer {
-    background: #343537;
+    background: url('img/bluedawn.jpg') no-repeat left bottom;
+    background-size: 100% auto;
+    bottom: 0;
     /* Header uses margin to center, this uses padding. */
-    padding: 20px 0 20px 0;
+    /*padding: 20px 0 20px 0;*/
+    /*position: absolute;*/
+    width: 100%;
 }
 
 footer a {
