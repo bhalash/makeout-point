@@ -488,6 +488,7 @@ article ul {
 
 .navigation {
     margin: 0 auto;
+    margin-bottom: 40px;
     overflow: auto;
     width: 230px;
 }

@@ -10,21 +10,50 @@
 <link rel="stylesheet" type="text/css" href="anchor/style.css" />
 </head>
 <body onload="prettyPrint()">
-    <header>
-        <div class="header-banner">
-            <div class="header-title">
-                <h4><a href="javascript:void(0)">super-duper long blog title</a></h4>
-            </div>
-        </div>
-        <div class="header-logo-wrap">
-            <div class="header-logo"><a href="https://www.twitter.com"></a></div>
-        </div>
-    </header>
-    <nav>
-        <div class="search-button"><a href="search.html"></a></div>
-    </nav>
     <div class="content-wrap">
+        <header>
+            <div class="header-banner">
+                <div class="header-title">
+                    <h4><a href="javascript:void(0)">super-duper long blog title</a></h4>
+                </div>
+            </div>
+            <div class="header-logo-wrap">
+                <div class="header-logo"><a href="https://www.twitter.com"></a></div>
+            </div>
+        </header>
         <div class="content">
+            <nav>
+                <div class="menu-button-wrap">
+                    <div class="menu-button">
+                        <a href="javascript:void(0)"></a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <form id="search" action="javascript:void(0)" method="post">
+                        <input id="term" name="term" placeholder="Type and then hit enter to search" tabindex="1" type="search" value="">
+                    </form>
+                    <div class="nav-menu">
+                        <ul class="col-one">
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                        </ul>
+                        <ul class="col-two">
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                        </ul>
+                        <ul class="col-three">
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                            <li><a href="javascript:void(0)">Placeholder</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <article>
                 <h3 class="post-title"><a href="javascript:void(0)">I feel strangely proud about my first recursive function</a></h3>
                 <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
@@ -166,9 +195,6 @@ function wrap(obj) {
             </p>
         </div>
     </div>
-    <footer>
-        <p>Theme by <a href="http://www.bhalash.com">Mark</a>. Site content copyright of owners.</p>
-    </footer>
     <script src="anchor/jquery-2.1.0.min.js"></script>
     <script src="anchor/prettify/prettify.js"></script>
     <script src="anchor/functions.js"></script>
