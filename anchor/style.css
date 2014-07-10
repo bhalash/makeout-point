@@ -273,11 +273,11 @@ header .title {
 header .logo-wrap {
     background-color: #fff;
     border-radius: 50%;
-    height: 60px;
+    height: 70px;
     margin: 0 auto;
-    margin-top: -32.5px;
+    margin-top: -37.5px;
     padding: 5px;
-    width: 60px;
+    width: 70px;
 }
 
 header .logo {
@@ -310,7 +310,12 @@ nav {
 
 nav a {
     display: block;
+    font-size: 1.03em;
     height: 100%;
+}
+
+nav a:hover {
+    text-decoration: none;
 }
 
 /* 
@@ -326,6 +331,7 @@ nav form {
 nav form input {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
+    border: 0;
     box-sizing: border-box;
     height: 40px;
     padding-left: 3px;
@@ -356,10 +362,21 @@ nav ul {
 }
 
 nav li {
-    color: #fff;
+    background-color: #f4b44f;
+    color: #343537;
     list-style-type: none;
+    margin-bottom: 4px;
+    padding: 7px 0 7px 0;
     text-align: left;
     width: 100%;
+}
+
+nav li:hover {
+    background-color: #ffc76f; 
+}
+
+nav li:active {
+    background-color: #ca8e2f;
 }
 
 /*
@@ -385,11 +402,6 @@ nav .button {
     width: 100%;
 }
 
-nav .button:hover {
-    background: #ba3434 url('img/menu_burger.png') no-repeat center center;
-    background-size: 45% auto;
-}
-
 /*
  * Nav Menu Area
  */
@@ -413,6 +425,7 @@ nav .menu {
  */
 
 .content-wrap {
+    margin-bottom: 100px;
     width: 100%;
 }
 
@@ -496,7 +509,6 @@ article ul {
 
 .navigation {
     margin: 0 auto;
-    margin-bottom: 40px;
     overflow: auto;
     width: 230px;
 }
@@ -508,7 +520,7 @@ article ul {
 }
 
 .navigation a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .navigation span {
@@ -560,4 +572,12 @@ footer p {
     font-size: 0.8em;
     margin-bottom: 0;
     text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Test if client is mobile since UA sniffing is iffy.
+    Checked by bool isMobile in functions.js */
+    .mobile-device-test {
+        display: none;
+    }
 }
