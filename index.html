@@ -63,31 +63,31 @@
             <h3 class="post-title"><a href="javascript:void(0)">I feel strangely proud about my first recursive function</a></h3>
             <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
             <pre>function left(amount, obj) {
-$(obj).children().each(function() {
-    if ($(this).children().length &gt; 0) {
-        left(amount, this);
-    } else {
-        $(this).css('left', parseInt($(this).css('left')) - amount + 'px');
-        wrap(this);
-    }
-});
+    $(obj).children().each(function() {
+        if ($(this).children().length &gt; 0) {
+            left(amount, this);
+        } else {
+            $(this).css('left', parseInt($(this).css('left')) - amount + 'px');
+            wrap(this);
+        }
+    });
 }
 
 function wrap(obj) {
-var x = $(obj).offset().left;
-var y = $(obj).offset().top;
-var w = $(obj).width();
-var h = $(obj).height();
+    var x = $(obj).offset().left;
+    var y = $(obj).offset().top;
+    var w = $(obj).width();
+    var h = $(obj).height();
 
-if (y + h &lt; 0) {
-    $(obj).css('top', $(window).height() + 'px');
-} else if (x + w &lt; 0) {
-    $(obj).css('left', $(window).width() + 'px'); 
-} else if (x &gt; $(window).width()) {
-    $(obj).css('left', 0 - w + 'px');
-} else if (y &gt; $(window).height()) {
-    $(obj).css('top', 0 - h + 'px');
-}
+    if (y + h &lt; 0) {
+        $(obj).css('top', $(window).height() + 'px');
+    } else if (x + w &lt; 0) {
+        $(obj).css('left', $(window).width() + 'px'); 
+    } else if (x &gt; $(window).width()) {
+        $(obj).css('left', 0 - w + 'px');
+    } else if (y &gt; $(window).height()) {
+        $(obj).css('top', 0 - h + 'px');
+    }
 }</pre>
             <p class="post-info"><a href="javascript:void(0)">3 comments</a></p>
         </article>
@@ -123,14 +123,14 @@ if (y + h &lt; 0) {
             <h3 class="post-title"><a href="javascript:void(0)">Lorem Ipsum Novo Ordo Seclorum</a></h3>
             <p class="post-info">by <a href="javascript:void(0)">Author</a> on <time datetime="2014-01-01">January 1</time><span><a href="javascript:void(0)">edit</a></span></p>
             <pre>&lt;header&gt;
-&lt;div class="header-banner"&gt;
-    &lt;div class="header-title"&gt;
-        &lt;h4&gt;&lt;a href="javascript:void(0)"&gt;super-duper long blog title&lt;/a&gt;&lt;/h4&gt;
+    &lt;div class="header-banner"&gt;
+        &lt;div class="header-title"&gt;
+            &lt;h4&gt;&lt;a href="javascript:void(0)"&gt;super-duper long blog title&lt;/a&gt;&lt;/h4&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="header-logo-wrap"&gt;
-    &lt;div class="header-logo"&gt;&lt;a href="https://www.twitter.com"&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
+    &lt;div class="header-logo-wrap"&gt;
+        &lt;div class="header-logo"&gt;&lt;a href="https://www.twitter.com"&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/header&gt;</pre>
             <p>This is a table:</p>
             <table>
