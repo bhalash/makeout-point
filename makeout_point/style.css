@@ -291,7 +291,7 @@ header .logo {
 
 header .logo:hover {
     /* Whatever social icon you want goes here. See img/social for the rest. */
-    background: url('img/caira_avatar.jpg') no-repeat center center;
+    background: url('img/avatar.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -339,33 +339,22 @@ nav form input {
  * Navigation Menu Panes
  */
 
-nav .panes {
-    margin: 7px 0 0 0;
-    overflow: auto;
-}
-
 nav ul {
     box-sizing: border-box;
-    float: left;
-    margin: 0;
-    padding: 5px;
-    width: 25%;
-}
-
-@media screen and (max-width: 800px) {
-    /* Four columns desktop, two colums mobile. */
-    nav ul {
-        width: 50%;
-    }
+    margin: 7px 0 0 0;
+    overflow: auto;
+    width: 100%;
 }
 
 nav li {
     background: #f4b44f;
     color: #343537;
+    display: inline-block;
+    float: left;
     list-style-type: none;
-    margin-bottom: 4px;
+    margin: 0 5px 5px 0;
     text-align: left;
-    width: 100%;
+    width: 32.5%;
 }
 
 nav li a {
@@ -499,29 +488,29 @@ article ul {
  * Instra-site Navigation
  */
 
-.navigation {
+.pagination {
     margin: 0 auto;
     overflow: auto;
     width: 210px;
 }
 
-.navigation a {
+.pagination a {
     display: block;
     height: 40px;
     line-height: 40px;
     width: 100%;
 }
 
-.navigation a:hover {
+.pagination a:hover {
     background: #e24a4a;
     text-decoration: none;
 }
 
-.navigation a:active {
+.pagination a:active {
     background: #ba3434; 
 }
 
-.navigation span {
+.pagination span {
     background: #343537;
     color: #fff;
     font-size: 0.85em;
@@ -529,8 +518,8 @@ article ul {
     width: 100px;
 }
 
-.navigation .previous { float: left; }
-.navigation .next { float: right; }
+.pagination .previous { float: left; }
+.pagination .next { float: right; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Test if client is mobile since UA sniffing is iffy.

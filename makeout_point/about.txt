@@ -1,0 +1,5 @@
+Theme name:     Makeout Point
+Description:    The world's lumpiest space theme.
+Author name:    Mark Grealish
+Author site:    http://www.bhalash.com
+License:        All rights reserved.
