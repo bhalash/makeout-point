@@ -85,7 +85,7 @@ p,
 pre,
 table,
 ul {
-    margin-bottom: 13px;
+    margin: 0 0 13px 0;
 }
 
 blockquote,
@@ -96,8 +96,7 @@ option,
 p,
 select { 
     color: #343537;
-    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-    font-size: 0.95em;
+    font: 0.95em 'Source Sans Pro', Arial, Helvetica, sans-serif;
     line-height: 1.4em;
     text-align: left;
 }
@@ -111,7 +110,7 @@ blockquote {
  * Lists
  */
 
-li { margin-bottom: 0; }
+li { margin: 0; }
 
 /*
  * Text Decoration
@@ -151,7 +150,7 @@ embed,
 img,
 iframe {
     height: auto;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     max-width: 100%;
 }
 
@@ -166,8 +165,7 @@ h4,
 h5,
 h6 {
     color: #343537;
-    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-    font-size: 2.75em;
+    font-family: 2.75em 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 0;
     text-align: left;
@@ -233,12 +231,11 @@ th {
 
 th {
     color: #fff;
-    background-color: #343537;
+    background: #343537;
 }
 
 tr:nth-child(even) { 
-    color: #fff;
-    background-color: #f4b44f; 
+    background: #f4b44f; 
 }
 
 /*
@@ -255,17 +252,19 @@ header h4 {
     color: #fff;
     margin: 0 auto;
     max-width: 90%;
+    /* !important-this centers the text verticall and spaces rest of header. */
     padding: 90px 0 90px 0;
     text-align: center;
 }
 
 header .banner {
     background: url('img/bluedawn.jpg') no-repeat left top;
-    background-size: 130% auto;
+    background-size: cover;
 }
 
 header .title {
-    background-color: rgba(0,0,0,0.5);
+    /* This is a black mask over the above background image. */
+    background: rgba(0,0,0,0.5);
     height: 100%;
 }
 
@@ -283,7 +282,7 @@ header .logo-wrap {
 header .logo {
     /* Avatar icon goes here. */
     background: #55acee url('img/social/twitter.png') no-repeat center center;
-    background-size: 100% auto;
+    background-size: cover;
     border-radius: 50%;
     height: 100%;
     transition: 0.4s background;
@@ -293,7 +292,7 @@ header .logo {
 header .logo:hover {
     /* Whatever social icon you want goes here. See img/social for the rest. */
     background: url('img/caira_avatar.jpg') no-repeat center center;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 header .logo a {
@@ -323,8 +322,6 @@ nav a:hover {
  */
 
 nav form {
-    border: 0;
-    outline: 0;
     width: 100%;
 }
 
@@ -334,7 +331,7 @@ nav form input {
     border: 0;
     box-sizing: border-box;
     height: 40px;
-    padding-left: 3px;
+    padding: 0 0 0 3px;
     width: 100%;
 }
 
@@ -343,40 +340,45 @@ nav form input {
  */
 
 nav .panes {
-    margin-top: 7px;
+    margin: 7px 0 0 0;
     overflow: auto;
 }
 
 nav ul {
     box-sizing: border-box;
     float: left;
-    margin-bottom: 0;
+    margin: 0;
     padding: 5px;
     width: 25%;
 }
 
 @media screen and (max-width: 800px) {
+    /* Four columns desktop, two colums mobile. */
     nav ul {
         width: 50%;
     }
 }
 
 nav li {
-    background-color: #f4b44f;
+    background: #f4b44f;
     color: #343537;
     list-style-type: none;
     margin-bottom: 4px;
-    padding: 7px 0 7px 0;
     text-align: left;
     width: 100%;
 }
 
-nav li:hover {
-    background-color: #ffc76f; 
+nav li a {
+    height: 40px;
+    line-height: 40px; 
 }
 
-nav li:active {
-    background-color: #ca8e2f;
+nav li a:hover {
+    background: #ffc76f; 
+}
+
+nav li a:active {
+    background: #ca8e2f;
 }
 
 /*
@@ -384,22 +386,14 @@ nav li:active {
  */
 
 /* Button for drop-down menu. */
-nav .button-wrap {
-    background-color: #fff;
-    border-radius: 50%;
-    height: 50px;
-    margin: 0 auto;
-    padding: 5px 5px 1px 5px;
-    width: 50px;
-}
-
 nav .button {
     background: #343537 url('img/menu_burger.png') no-repeat center center;
     background-size: 45% auto;
     border-radius: 50%;
-    height: 100%;
+    height: 50px;
     margin: 0 auto;
-    width: 100%;
+    margin-bottom: 2px;
+    width: 50px;
 }
 
 /*
@@ -407,6 +401,7 @@ nav .button {
  */
 
 nav .menu-wrap {
+    /* This is the arrow below the menu button when the menu is open. */
     background: #fff url('img/inset_top_arrow.svg') no-repeat center center;
     background-size: auto 100%; 
     display: none;
@@ -424,15 +419,11 @@ nav .menu {
  * Site Content Wrapper
  */
 
-.content-wrap {
-    margin-bottom: 100px;
-    width: 100%;
-}
-
 .content {
     margin: 0 auto;
+    /* To stop smear on gigantor screen setups. */
     max-width: 1440px;
-    position: relative;
+    padding: 0 0 100px 0;
     top: 0;
     width: 65%;
 }
@@ -448,7 +439,7 @@ nav .menu {
  */
 
 article {
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
 }
 
 article a {
@@ -471,7 +462,7 @@ article blockquote {
 
 article ol,
 article ul {
-    margin-left: 30px;
+    margin: 0 0 0 30px;
 }
 
 /*
@@ -494,7 +485,8 @@ article ul {
     color: #F4B44F;
 }
 
-.post-info{
+.post-info {
+    /* !important-clears float below. */
     overflow: auto;
 }
 
@@ -510,69 +502,35 @@ article ul {
 .navigation {
     margin: 0 auto;
     overflow: auto;
-    width: 230px;
+    width: 210px;
 }
 
 .navigation a {
     display: block;
-    height: 100%;
+    height: 40px;
+    line-height: 40px;
     width: 100%;
 }
 
 .navigation a:hover {
+    background: #e24a4a;
     text-decoration: none;
+}
+
+.navigation a:active {
+    background: #ba3434; 
 }
 
 .navigation span {
     background: #343537;
     color: #fff;
     font-size: 0.85em;
-    padding: 5px;
     text-align: center;
     width: 100px;
 }
 
-.navigation span:active {
-    background: #ba3434; 
-}
-
-.navigation .previous {
-    float: left;
-}
-
-.navigation .next {
-    float: right;
-}
-
-/*
- * Site Footer
- */
-
-footer {
-    background: url('img/bluedawn.jpg') no-repeat left bottom;
-    background-size: 130% auto;
-    bottom: 0;
-    /* Header uses margin to center, this uses padding. */
-    /*padding: 20px 0 20px 0;*/
-    /*position: absolute;*/
-    width: 100%;
-}
-
-footer a {
-    color: #ba3434;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #ca4343;
-}
-
-footer p {
-    color: #fff;
-    font-size: 0.8em;
-    margin-bottom: 0;
-    text-align: center;
-}
+.navigation .previous { float: left; }
+.navigation .next { float: right; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Test if client is mobile since UA sniffing is iffy.
