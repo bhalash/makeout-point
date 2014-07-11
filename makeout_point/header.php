@@ -7,14 +7,11 @@
 <title><?php echo page_title('404: Page not found'); ?> - <?php echo site_name(); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo theme_url('prettify.css'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo theme_url('style.css'); ?>" />
-
-<!-- TODO -->
-<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
-
+<link rel="icon" type="image/png" href="<?php echo theme_url('img/favicon.png'); ?>" />
 <meta property="og:title" content="<?php echo site_name(); ?>">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo current_url(); ?>">
-<meta property="og:image" content="<?php echo theme_url('screenshot.png'); ?>">
+<meta property="og:image" content="<?php echo theme_url('img/screenshot.png'); ?>">
 <meta property="og:site_name" content="<?php echo site_name(); ?>">
 <meta property="og:description" content="<?php echo site_description(); ?>">
 </head>
