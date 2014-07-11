@@ -239,6 +239,19 @@ tr:nth-child(even) {
 }
 
 /*
+ * Site Content Wrapper
+ */
+
+.content {
+    margin: 0 auto;
+    /* To stop smear on gigantor screen setups. */
+    max-width: 1440px;
+    padding: 0 0 100px 0;
+    top: 0;
+    width: 65%;
+}
+
+/*
  * Site Header
  */
 
@@ -398,20 +411,20 @@ nav li a:active {
  * See header.php for more information.
  */
 
-nav .beard {
+nav .beard a {
     background: #9a9a9a url('img/beard_icon.png') no-repeat 95% center;
     background-size: auto 80%;
     color: #fff;
 }
 
+nav .beard a:active,
 nav .beard a:hover {
     background: #c8c8c8 url('img/beard_icon.png') no-repeat 95% center;
     background-size: auto 80%;
 }
 
 nav .beard a:active {
-    background: #7a7a7a url('img/beard_icon.png') no-repeat 95% center;
-    background-size: auto 80%;
+    background-color: #7a7a7a;
 }
 
 /*
@@ -446,19 +459,6 @@ nav .menu {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 20px;
-}
-
-/*
- * Site Content Wrapper
- */
-
-.content {
-    margin: 0 auto;
-    /* To stop smear on gigantor screen setups. */
-    max-width: 1440px;
-    padding: 0 0 100px 0;
-    top: 0;
-    width: 65%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -502,34 +502,34 @@ article ul {
  * Post Title and Author Info
  */
 
-.post-title {
+article .article-title {
     border-bottom: 2px solid #343537;
     box-sizing: border-box;
     padding: 0 0 3px 0;
     text-align: left;
 }
 
-.post-title a {
+article .article-title a {
     color: #343537;
     text-decoration: none;
 }
 
-.post-title a:hover {
+article .article-title a:hover {
     color: #F4B44F;
 }
 
-.post-info {
+article .article-info {
     /* !important-clears float below. */
     overflow: auto;
 }
 
-.post-info span {
+article .article-info span {
     /* Edit post link. */
     float: right;
 }
 
 /*
- * Instra-site Navigation
+ * Pagination
  */
 
 .pagination {
@@ -564,6 +564,10 @@ article ul {
 
 .pagination .previous { float: left; }
 .pagination .next { float: right; }
+
+/*
+ * Article Comment Output
+ */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Test if client is mobile since UA sniffing is iffy.
