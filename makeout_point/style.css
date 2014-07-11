@@ -248,6 +248,10 @@ header a {
     width: 100%;
 }
 
+header a:hover {
+    text-decoration: none;
+}
+
 header h4 {
     color: #fff;
     margin: 0 auto;
@@ -339,27 +343,40 @@ nav form input {
  * Navigation Menu Panes
  */
 
-nav ul {
-    box-sizing: border-box;
-    margin: 7px 0 0 0;
+nav .menu {
     overflow: auto;
-    width: 100%;
+}
+
+nav ul {
+    /* Column floats are set via JavaScript. Couldn't figure out the right 
+    CSS selector for the life of me. */
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 32.5%;
+}
+
+@media screen and (max-device-width:480px) {
+    nav ul {
+        width: 100%;
+    }
 }
 
 nav li {
     background: #f4b44f;
     color: #343537;
-    display: inline-block;
-    float: left;
+    font-weight: bold;
     list-style-type: none;
-    margin: 0 5px 5px 0;
-    text-align: left;
-    width: 32.5%;
+    margin: 0 0 5px 0;
+    width: 100%;
 }
 
 nav li a {
+    box-sizing: border-box;
     height: 40px;
     line-height: 40px; 
+    padding: 0 5px 0 5px;
+    text-align: left;
 }
 
 nav li a:hover {
@@ -368,6 +385,27 @@ nav li a:hover {
 
 nav li a:active {
     background: #ca8e2f;
+}
+
+/*
+ * Example Custom Menu Item
+ * See header.php for more information.
+ */
+
+.beard {
+    background: #9a9a9a url('img/beard_icon.png') no-repeat 95% center;
+    background-size: auto 80%;
+    color: #fff;
+}
+
+.beard a:hover {
+    background: #c8c8c8 url('img/beard_icon.png') no-repeat 95% center;
+    background-size: auto 80%;
+}
+
+.beard a:active {
+    background: #7a7a7a url('img/beard_icon.png') no-repeat 95% center;
+    background-size: auto 80%;
 }
 
 /*
