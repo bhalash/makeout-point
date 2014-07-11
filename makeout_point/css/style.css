@@ -470,13 +470,22 @@ nav .facebook a:active {
 
 /* Button for drop-down menus. */
 .button {
-    background: #343537 url('../img/menu_burger.png') no-repeat center center;
-    background-size: 45% auto;
     border-radius: 50%;
     height: 50px;
     margin: 0 auto;
     margin-bottom: 2px;
     width: 50px;
+}
+
+.button a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+nav .button {
+    background: #343537 url('../img/menu_burger.png') no-repeat center center;
+    background-size: 45% auto;
 }
 
 /*

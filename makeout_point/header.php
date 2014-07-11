@@ -28,9 +28,7 @@
     </header>
     <div class="content">
         <nav>
-            <div class="button">
-                <a href="javascript:void(0)"></a>
-            </div>
+            <div class="button"><a href="javascript:void(0)"></a></div>
             <div class="menu-wrap">
                 <div class="menu">
                     <form id="search" action="<?php echo search_url(); ?>" method="post">
