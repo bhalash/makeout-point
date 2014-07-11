@@ -33,12 +33,19 @@ function closeMenu() {
     menuIsOpen = false;
 }
 
+function spaceMenu() {
+    // Three nav columns. Middle is centered.
+    $('.menu').children('ul').first().css('float','left');
+    $('.menu').children('ul').last().css('float','right');
+}
+
 $(function() {
     // For google-code-prettify
     $('pre').each(function() {
         $(this).addClass('prettyprint');
     });    
 
+    spaceMenu();
     testSmartphone();
 });
 
