@@ -8,6 +8,7 @@
 <?php endwhile; endif; ?>
 <?php if(has_pagination()): ?>
     <p class="pagination">
+        <!-- TODO: FIXME -->
         <span class="previous"><a href="<?php echo posts_prev(); ?>">Previous Page</a></span>
         <span class="next"><a href="<?php echo posts_next(); ?>">Next Page</a></span>
     </p>
