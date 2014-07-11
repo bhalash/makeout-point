@@ -6,4 +6,11 @@
         <?php echo article_markdown(); ?>
     </article>
 <?php endwhile; endif; ?>
+<?php if(has_pagination()): ?>
+    <p class="pagination">
+        <!-- TODO: FIXME -->
+        <span class="previous"><?php echo posts_prev(); ?></span>
+        <span class="next"><?php echo posts_next(); ?></span>
+    </p>
+<?php endif; ?>
 <?php theme_include('footer'); ?>

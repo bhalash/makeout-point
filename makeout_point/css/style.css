@@ -468,8 +468,8 @@ nav .facebook a:active {
  * Menu Toggle Button
  */
 
-/* Button for drop-down menu. */
-nav .button {
+/* Button for drop-down menus. */
+.button {
     background: #343537 url('../img/menu_burger.png') no-repeat center center;
     background-size: 45% auto;
     border-radius: 50%;
