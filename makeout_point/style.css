@@ -373,10 +373,16 @@ nav li {
 
 nav li a {
     box-sizing: border-box;
-    height: 40px;
-    line-height: 40px; 
-    padding: 0 5px 0 5px;
+    line-height: 1.2em;
+    padding: 10px;
     text-align: left;
+}
+
+nav li a img {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    width: 100%;
 }
 
 nav li a:hover {
@@ -392,18 +398,18 @@ nav li a:active {
  * See header.php for more information.
  */
 
-.beard {
+nav .beard {
     background: #9a9a9a url('img/beard_icon.png') no-repeat 95% center;
     background-size: auto 80%;
     color: #fff;
 }
 
-.beard a:hover {
+nav .beard a:hover {
     background: #c8c8c8 url('img/beard_icon.png') no-repeat 95% center;
     background-size: auto 80%;
 }
 
-.beard a:active {
+nav .beard a:active {
     background: #7a7a7a url('img/beard_icon.png') no-repeat 95% center;
     background-size: auto 80%;
 }
@@ -489,7 +495,7 @@ article blockquote {
 
 article ol,
 article ul {
-    margin: 0 0 0 30px;
+    margin-left: 30px;
 }
 
 /*
