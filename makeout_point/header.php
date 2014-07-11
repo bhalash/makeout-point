@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<!-- Bless the Maker and His water. Bless the coming and going of Him. May His passage cleanse the world. May He keep the world for His people. -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title><?php echo page_title('404: Page not found'); ?> - <?php echo site_name(); ?></title>
-<link rel="stylesheet" type="text/css" href="<?php echo theme_url('prettify.css'); ?>" />
-<link rel="stylesheet" type="text/css" href="<?php echo theme_url('style.css'); ?>" />
-<link rel="icon" type="image/png" href="<?php echo theme_url('img/favicon.png'); ?>" />
-<meta property="og:title" content="<?php echo site_name(); ?>">
-<meta property="og:type" content="website">
-<meta property="og:url" content="<?php echo current_url(); ?>">
-<meta property="og:image" content="<?php echo theme_url('img/screenshot.png'); ?>">
-<meta property="og:site_name" content="<?php echo site_name(); ?>">
-<meta property="og:description" content="<?php echo site_description(); ?>">
+    <!-- Bless the Maker and His water. Bless the coming and going of Him. May His passage cleanse the world. May He keep the world for His people. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title><?php echo page_title('404: Page not found'); ?> - <?php echo site_name(); ?></title>
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/prettify.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/style.css'); ?>" />
+    <link rel="icon" type="image/png" href="<?php echo theme_url('img/favicon.png'); ?>" />
+    <meta property="og:title" content="<?php echo site_name(); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo current_url(); ?>">
+    <meta property="og:image" content="<?php echo theme_url('img/screenshot.png'); ?>">
+    <meta property="og:site_name" content="<?php echo site_name(); ?>">
+    <meta property="og:description" content="<?php echo site_description(); ?>">
 </head>
 <body onload="prettyPrint()">
     <header>
@@ -67,8 +67,8 @@
                                 <!-- Some John Hancock. Example of customized link. :) -->
                                 <a href="http://www.bhalash.com" title="Real Men Wear Beards">Real Men Wear Beards</a>
                             </li>
-                            <li><a href="http://www.github.com" title="Github">Github</a></li>
-                            <li><a href="http://www.facebook.com" title="Facebook">Facebook</a></li>
+                            <li class="github"><a href="http://www.github.com" title="Github">Github</a></li>
+                            <li class="facebook"><a href="http://www.facebook.com" title="Facebook">Facebook</a></li>
                         </ul>
                     <?php endif; ?>
                 </div>
