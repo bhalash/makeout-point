@@ -430,32 +430,33 @@ nav .beard a:active {
 
 /* Github */
 nav .github a {
-    background: #fff url('../img/github_icon.png') no-repeat 95% center;
+    background: #666 url('../img/social/github.png') no-repeat 95% center;
     background-size: auto 80%;
-    color: #666;
+    color: #fff;
 }
 
 nav .github a:active,
 nav .github a:hover {
-    background: #fff url('../img/github_icon.png') no-repeat 95% center;
+    background: #999 url('../img/social/github.png') no-repeat 95% center;
     background-size: auto 80%;
-    color: #999;
+    color: #fff;
 }
 
 nav .github a:active {
-    color: #333;
+    background: #333 url('../img/social/github.png') no-repeat 95% center;
+    background-size: auto 80%;
 }
 
 /* Facebook */
 nav .facebook a {
-    background: #3B5998 url('../img/facebook_icon.png') no-repeat 95% center;
+    background: #3B5998 url('../img/social/facebook.png') no-repeat 95% center;
     background-size: auto 80%;
     color: #fff;
 }
 
 nav .facebook a:active,
 nav .facebook a:hover {
-    background: #587ecd url('../img/facebook_icon.png') no-repeat 95% center;
+    background: #587ecd url('../img/social/facebook.png') no-repeat 95% center;
     background-size: auto 80%;
 }
 
