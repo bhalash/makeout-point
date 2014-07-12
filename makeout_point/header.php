@@ -5,9 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title><?php echo page_title('404: Page not found'); ?> - <?php echo site_name(); ?></title>
+
     <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/prettify.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/social.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/style.css'); ?>" />
+
     <link rel="icon" type="image/png" href="<?php echo theme_url('img/favicon.png'); ?>" />
+
     <meta property="og:title" content="<?php echo site_name(); ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo current_url(); ?>">
@@ -35,39 +39,36 @@
                     <form id="search" action="<?php echo search_url(); ?>" method="post">
                         <input id="term" name="term" placeholder="Type and then hit enter to search" tabindex="1" type="search" value="<?php echo search_term(); ?>">
                     </form>
-                    <?php if(has_menu_items()): ?> 
+                    <?php if (has_menu_items()) : ?> 
                         <!-- You can add more items on here after the loop. -->
                         <!-- Menu items are /totes/ stylable-just set up a class with background image/colour in style.css and add the class. -->
-                        <ul>
+                        <ul class="left">
                             <?php while(menu_items()): ?> 
                                 <li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-                                    <a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
+                                    <a class="list-alt" href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
                                 </li>
                             <?php endwhile; ?>
-                            <li>
-                                <a href="<?php echo base_url('contact-us'); ?>" title="<?php echo site_name(); ?>">Contact Us</a>
-                            </li>
                         </ul>
                         <!-- Site categories. -->
                         <!-- You must create a category before you can use it, and a post can only have one category. -->
                         <!-- Interesting restriction. -->
                         <ul>
-                            <?php while(categories()): ?>
-                                <li>
-                                    <a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
-                                        <?php echo category_title(); ?> (<?php echo category_count(); ?>)
-                                    </a>
-                                </li>
+                            <?php while(categories()) : ?>
+                                <?php if (category_count() > 0) : ?>
+                                    <li>
+                                        <a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
+                                            <?php echo category_title(); ?> (<?php echo category_count(); ?>)
+                                        </a>
+                                    </li>
+                                <?php endif; ?>
                             <?php endwhile; ?>
                         </ul>
                         <!-- External hyperlinks. -->
-                        <ul>
-                            <li class="beard">
-                                <!-- Some John Hancock. Example of customized link. :) -->
-                                <a href="http://www.bhalash.com" title="Real Men Wear Beards">Real Men Wear Beards</a>
-                            </li>
-                            <li class="github"><a href="http://www.github.com" title="Github">Github</a></li>
-                            <li class="facebook"><a href="http://www.facebook.com" title="Facebook">Facebook</a></li>
+                        <ul class="right">
+                            <li><a class="beard" href="http://www.bhalash.com" title="Real Men Wear Beards">Real Men Wear Beards</a></li>
+                            <li><a class="facebook" href="http://www.facebook.com" title="Facebook">Facebook</a></li>
+                            <li><a class="linkedin" href="http://www.linkedin.com" title="LinkedIn">LinkedIn</a></li>
+                            <li><a class="rss" href="<?php rss_url(); ?>" title="RSS Feed">RSS Feed</a></li>
                         </ul>
                     <?php endif; ?>
                 </div>
