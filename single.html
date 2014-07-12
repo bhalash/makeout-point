@@ -5,7 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Anchor Theme</title>
-<!-- google-code-prettifier -->
 <link rel="stylesheet" type="text/css" href="makeout_point/css/prettify.css" />
 <link rel="stylesheet" type="text/css" href="makeout_point/css/style.css" />
 </head>
@@ -20,7 +19,7 @@
             <div class="logo"><a href="https://www.twitter.com"></a></div>
         </div>
     </header>
-    <div class="content">
+    <section class="content">
         <nav>
             <div class="button">
                 <a href="javascript:void(0)"></a>
@@ -112,8 +111,29 @@
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             <p><a title="Lorem Ipsum" href="sample_posts/1.jpg"><img src="sample_posts/1.jpg" alt="Lorem Ipsum" /></a><br />
         </article>
-        <div class="article-comments"></div>
-    </div>
+        <section class="comments">
+            <div class="button"><a href="javascript:void(0)"></a></div>
+                <div class="wrap">
+                    <div class="menu">
+                        <h5>1 comment(s).</h5>
+                        <ul class="commentlist">
+                            <li class="comment" id="comment-5">
+                                <h6>Mark</h6>
+                                <span class="comment-date"><time datetime="12th Jul, 2014">12th Jul, 2014</time></span><br />Testing testing.
+                            </li>
+                        </ul>
+                        <form id="comment" class="commentform" method="post" action="javascript:void(0)">
+                        <p>
+                            <input name="name" id="name" type="text" placeholder="Your name" value="">
+                            <input name="email" id="email" type="email" placeholder="Your email (won’t be published)" value="">
+                            <textarea name="text" id="text" placeholder="Your comment"></textarea>
+                            <button class="btn" type="submit" >Post Comment</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js" type="text/javascript"></script>
     <script src="makeout_point/js/functions.js"></script>
