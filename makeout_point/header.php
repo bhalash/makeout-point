@@ -26,10 +26,10 @@
             <div class="logo"><a href="https://www.twitter.com"></a></div>
         </div>
     </header>
-    <div class="content">
+    <section class="content">
         <nav>
             <div class="button"><a href="javascript:void(0)"></a></div>
-            <div class="menu-wrap">
+            <div class="wrap">
                 <div class="menu">
                     <form id="search" action="<?php echo search_url(); ?>" method="post">
                         <input id="term" name="term" placeholder="Type and then hit enter to search" tabindex="1" type="search" value="<?php echo search_term(); ?>">

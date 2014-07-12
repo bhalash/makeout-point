@@ -9,34 +9,34 @@ function testSmartphone() {
     $('body').remove('.' + mob);
 }
 
-function openMenu() {
+function openMenu(obj, btn) {
     // Same code in closeMenu(). I don't want to animate menu on phones.
     // It looks juddery, depending on the handset. 
     if (!isSmartphone) {
-        $('nav .menu-wrap').slideDown();
+        $(obj).slideDown();
     } else {
-        $('nav .menu-wrap').toggle();
+        $(obj).toggle();
     }
 
-    $('nav .button').css('background-color', '#ba3434');
+    $(btn).css('background-color', '#ba3434');
     menuIsOpen = true;
 }
 
-function closeMenu() {
+function closeMenu(obj, btn) {
     if (!isSmartphone) {
-        $('nav .menu-wrap').slideUp();
+        $(obj).slideUp();
     } else {
-        $('nav .menu-wrap').toggle();
+        $(obj).toggle();
     }
 
-    $('nav .button').css('background-color', '#343537');
+    $(btn).css('background-color', '#343537');
     menuIsOpen = false;
 }
 
 function spaceMenu() {
     // Three nav columns. Middle is centered.
-    $('.menu').children('ul').first().css('float','left');
-    $('.menu').children('ul').last().css('float','right');
+    $('nav .menu').children('ul').first().css('float','left');
+    $('nav .menu').children('ul').last().css('float','right');
 }
 
 $(function() {
@@ -51,8 +51,16 @@ $(function() {
 
 $('nav .button').click(function() {
     if (!menuIsOpen) {
-        openMenu();
+        openMenu('nav .wrap', $(this));
     } else {
-        closeMenu();
+        closeMenu('nav .wrap', $(this));
+    }
+});
+
+$('.comments .button').click(function() {
+    if (!menuIsOpen) {
+        openMenu('.comments .wrap', $(this));
+    } else {
+        closeMenu('.comments .wrap', $(this));
     }
 });
