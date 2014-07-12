@@ -23,7 +23,8 @@
             </div>
         </div>
         <div class="logo-wrap">
-            <div class="logo"><a href="https://www.twitter.com"></a></div>
+            <!-- Set this in functions.php -->
+            <div class="logo"><a href="<?php echo twitter_url(); ?>"></a></div>
         </div>
     </header>
     <section class="content">
