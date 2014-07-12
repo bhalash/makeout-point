@@ -625,11 +625,6 @@ article .article-info span {
     width: 50%;
 }
 
-
-/*
- * Smartphone Test 
- */
-
 .comments {
     overflow: auto;
 }
@@ -757,6 +752,18 @@ input[name="email"] {
         width: 100%;
     }
 }
+
+/*
+ * 404 Message
+ */
+
+.fail > * {
+    text-align: center;
+}
+
+/*
+ * Smartphone Test 
+ */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Test if client is mobile since UA sniffing is iffy.
