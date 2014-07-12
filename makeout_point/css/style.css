@@ -244,6 +244,9 @@ form {
 
 input,
 textarea {
+    /* Removes rounded corners and borders on iOS devices. */
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     box-sizing: border-box;
     border: 1px solid #a9a9a9;
     display: inline-block;
@@ -252,8 +255,6 @@ textarea {
 }
 
 input {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
     box-sizing: border-box;
     margin: 0 0 8px 0;
     padding: 3px;
@@ -325,7 +326,7 @@ header h4 {
 }
 
 header .banner {
-    background: url('../img/bluedawn.jpg') no-repeat left top;
+    background: url('../img/header.jpg') no-repeat left top;
     background-size: cover;
 }
 
@@ -450,10 +451,9 @@ nav li a img {
 }
 
 /* Optional highlight colour. So much orange gets dull. */
-
-nav li .list-alt {
-    background-color: #cee3f8;
-}
+nav li .list-alt { background-color: #cee3f8; }
+nav li .list-alt:hover { background-color: #E6EFF7; }
+nav li .list-alt:active { background-color: #A3CDF7; }
 
 /*
  * Menu Toggle Button
@@ -510,9 +510,7 @@ nav .button {
  * Article
  */
 
-article {
-    margin: 0 0 30px 0;
-}
+article { margin: 0 0 30px 0; }
 
 article a {
     color: #ba3434;
@@ -524,13 +522,8 @@ article a img {
     box-sizing: border-box;
 }
 
-article a:hover {
-    color: #ca4343;
-}
-
-article blockquote {
-    font-size: 0.89em;
-}
+article a:hover { color: #ca4343; }
+article blockquote { font-size: 0.89em; }
 
 article ol,
 article ul {
@@ -555,16 +548,6 @@ article .article-title a {
 
 article .article-title a:hover {
     color: #F4B44F;
-}
-
-article .article-info {
-    /* !important-clears float below. */
-    overflow: auto;
-}
-
-article .article-info span {
-    /* Edit post link. */
-    float: right;
 }
 
 /*
@@ -673,9 +656,7 @@ article .article-info span {
  * 404 Message
  */
 
-.fail > * {
-    text-align: center;
-}
+.fail > * { text-align: center; }
 
 /*
  * Mobile (Phone/Tablet) Devices
