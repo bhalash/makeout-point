@@ -501,10 +501,6 @@ nav .button {
     padding: 20px 0 0 0;
 }
 
-.comments .wrap {
-    padding-bottom: 30px;
-}
-
 .menu {
     background: #343537;
     box-sizing: border-box;
@@ -638,6 +634,16 @@ article .article-info span {
     overflow: auto;
 }
 
+.comments {
+    margin-top: 15px;
+    padding: 15px 0 0 0;
+}
+
+.comments form {
+    margin-top: 15px;
+    padding: 15px 0 25px 0;
+}
+
 .comments .notifications {
     background-color: #ba3434;
     height: 100px;
@@ -664,12 +670,6 @@ article .article-info span {
 
 .comments a:hover {
     color: #ca4343;
-}
-
-.comments,
-.comments form {
-    margin-top: 15px;
-    padding: 15px 0 0 0;
 }
 
 .comments h5 {
