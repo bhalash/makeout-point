@@ -1,7 +1,11 @@
 <?php theme_include('header'); ?>
     <article id="article-<?php echo article_id(); ?>">
         <h3 class="article-title"><a href="<?php echo article_url(); ?>"><?php echo article_title();?></a></h3>
-        <p class="article-info">by <a href="mailto:<?php echo user_authed_email(); ?>"><?php echo article_author(); ?></a> on <time datetime="<?php echo article_date(); ?>"><?php echo article_date(); ?></time></p>
+        <p class="article-info">
+            by <a href="mailto:<?php echo user_authed_email(); ?>"><?php echo article_author(); ?></a>
+             on <time datetime="<?php echo article_date(); ?>"><?php echo article_date(); ?></time>
+             in <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a>
+         </p>
         <?php echo article_markdown(); ?>
     </article>
     <?php if(comments_open()): ?>
@@ -10,17 +14,23 @@
         <div class="wrap">
             <div class="menu">
                 <?php if(has_comments()): ?>
-                    <h5><?php echo total_comments(); ?> comment(s).</h5>
+                    <h5 class="comment-info">
+                    <?php if (total_comments() == 1) : ?>
+                        <?php echo total_comments(); ?> comment</h5>
+                    <?php else : ?>
+                        <?php echo total_comments(); ?> comments</h5>
+                    <?php endif; ?>
                     <ul class="commentlist">
                         <?php while(comments()): ?>
                             <li class="comment" id="comment-<?php echo comment_id(); ?>">
-                                <h6><?php echo comment_name(); ?></h6>
+                                <h6 class="comment-name"><?php echo comment_name(); ?></h6>
                                 <span class="comment-date"><time datetime="<?php echo comment_date(); ?>"><?php echo comment_date(); ?></time></span><br />
                                 <?php echo comment_text(); ?>
                             </li>
                         <?php endwhile; ?>
                     </ul>
                 <?php endif; ?>
+                <h5 class="comment-info">Say something</h5>
                 <form id="comment" class="commentform" method="post" action="<?php echo comment_form_url(); ?>#comment">
                     <p>
                         <?php echo comment_form_input_name('placeholder="Your name"'); ?>
