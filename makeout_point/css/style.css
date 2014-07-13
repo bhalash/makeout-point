@@ -248,7 +248,7 @@ textarea {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     box-sizing: border-box;
-    border: 1px solid #a9a9a9;
+    border: 0;
     display: inline-block;
     resize: none;
     padding: 5px;
@@ -397,7 +397,6 @@ nav form {
 nav form input {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
-    border: 0;
     box-sizing: border-box;
     height: 40px;
     padding: 0 0 0 3px;
