@@ -99,7 +99,7 @@ option,
 p,
 select { 
     color: #343537;
-    font: 0.95em 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font: 0.95em 'Source Sans Pro Regular', Arial, Helvetica, sans-serif;
     line-height: 1.4em;
     text-align: left;
 }
@@ -168,7 +168,7 @@ h4,
 h5,
 h6 {
     color: #343537;
-    font-family: 2.75em 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-family: 2.75em 'Source Sans Pro Regular', Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 0;
     text-align: left;
@@ -187,7 +187,7 @@ h6 { font-size: 1.35em; }
 code,
 pre { 
     color: #343537;
-    font-family: 'Source Code Pro', 'Courier New', Courier, monospace; 
+    font-family: 'Source Code Pro Regular', 'Courier New', Courier, monospace; 
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     -webkit-font-smoothing: antialiased;
