@@ -201,7 +201,7 @@ pre {
     font-size: 0.7em;
     letter-spacing: 0;
     line-height: 1.2em;
-    overflow: hidden;
+    overflow: auto;
     text-align: left;
     padding: 10px;
 }
@@ -297,7 +297,6 @@ button:active {
     margin: 0 auto;
     /* To stop smear on gigantor screen setups. */
     max-width: 1024px;
-    padding: 0 0 50px 0;
     top: 0;
     width: 65%;
 }
@@ -425,6 +424,7 @@ nav li {
     background: #f4b44f;
     list-style-type: none;
     margin: 0 0 5px 0;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -509,7 +509,7 @@ nav .button {
  * Article
  */
 
-article { margin: 0 0 30px 0; }
+article { margin: 0 0 50px 0; }
 
 article a {
     color: #ba3434;
@@ -547,6 +547,10 @@ article .article-title a {
 
 article .article-title a:hover {
     color: #F4B44F;
+}
+
+article .article-info {
+    margin-bottom: 20px;
 }
 
 /*
@@ -657,19 +661,8 @@ article .article-title a:hover {
 
 .fail > * { text-align: center; }
 
-/*
- * Mobile (Phone/Tablet) Devices
- */
-
 @media screen and (max-device-width:480px) {
-    nav ul {
-        width: 100%;
-    }
-
-    .comments ul {
-        width: 100%;
-    }
-
+    /* iPhone / Smartphone */
     form {
         width: 100%;
     }
@@ -692,6 +685,23 @@ article .article-title a:hover {
 
     .comments {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav ul {
+        width: 100%;
+    }
+
+    .comments ul {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) { 
+    /* iPad 3-4 */
+    .content {
+        width: 75%;
     }
 }
 
