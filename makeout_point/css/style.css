@@ -41,11 +41,9 @@ time, mark, audio, video {
 @font-face {
     font-family: 'Source Code Pro Regular';
     src: 
-        url('fonts/source_code_pro/scp-r.eot?') format('embedded-opentype'),
-        url('fonts/source_code_pro/scp-r.woff') format('woff'),
-        url('fonts/source_code_pro/scp-r.otf')  format('opentype'),
-        url('fonts/source_code_pro/scp-r.ttf')  format('truetype'),
-        url('fonts/source_code_pro/scp-r.svg')  format('svg');
+        url('../fonts/source_sans_pro/regular/SourceSansPro-Regular.eot?') format('embedded-opentype'),
+        url('../fonts/source_sans_pro/regular/SourceSansPro-Regular.ttf.woff') format('woff'),
+        url('../fonts/source_sans_pro/regular/SourceSansPro-Regular.svg') format('svg'),
 }
 
 /* 
@@ -58,11 +56,10 @@ time, mark, audio, video {
 @font-face {
     font-family: 'Source Sans Pro Regular';
     src: 
-        url('fonts/source_sans_pro/ssp-r.eot?') format('embedded-opentype'),
-        url('fonts/source_sans_pro/ssp-r.woff') format('woff'),
-        url('fonts/source_sans_pro/ssp-r.otf')  format('opentype'),
-        url('fonts/source_sans_pro/ssp-r.ttf')  format('truetype'),
-        url('fonts/source_sans_pro/ssp-r.svg')  format('svg');
+        url('../fonts/source_sans_pro/regular/SourceSansPro-Regular.eot?') format('embedded-opentype'),
+        url('../fonts/source_sans_pro/regular/SourceSansPro-Regular.ttf.woff') format('woff'),
+        url('../fonts/source_sans_pro/regular/SourceSansPro-Regular.otf') format('opentype'),
+        url('../fonts/source_sans_pro/regular/SourceSansPro-Regular.ttf') format('truetype')
 }
 
 /*
@@ -99,7 +96,7 @@ option,
 p,
 select { 
     color: #343537;
-    font: 0.95em 'Source Sans Pro Regular', Arial, Helvetica, sans-serif;
+    font: 0.95em 'Source Sans Pro Light', 'Source Sans Pro', Arial, Helvetica, sans-serif;
     line-height: 1.4em;
     text-align: left;
 }
@@ -168,7 +165,7 @@ h4,
 h5,
 h6 {
     color: #343537;
-    font-family: 2.75em 'Source Sans Pro Regular', Arial, Helvetica, sans-serif;
+    font-family: 2.75em 'Source Sans Pro Regular', 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 0;
     text-align: left;
@@ -187,21 +184,22 @@ h6 { font-size: 1.35em; }
 code,
 pre { 
     color: #343537;
-    font-family: 'Source Code Pro Regular', 'Courier New', Courier, monospace; 
+    font-family: 'Source Code Pro Regular', 'Source Code Pro', 'Courier New', Courier, monospace; 
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     -webkit-font-smoothing: antialiased;
 }
 
 code {
-    font-size: 0.85em;
+    font-size: 0.87em;
+    font-weight: bold;
 }
 
 pre {
     background: #343537;
     box-sizing: border-box;
     color: #fff;
-    font-size: 0.7em;
+    font-size: 0.8em;
     letter-spacing: 0;
     line-height: 1.2em;
     overflow: auto;
@@ -221,7 +219,7 @@ table {
 td,
 th {
     color: #343537;
-    font-family: 'Source Code Pro', 'Courier New', Courier, monospace; 
+    font-family: 'Source Code Pro Regular', 'Courier New', Courier, monospace; 
     text-align: left;
     padding: 10px;
 }
@@ -284,8 +282,8 @@ button {
     border-radius: 0;
     float: left;
     height: 40px;
-    margin: 1px 0 0 0;
-    width: 100px;
+    margin: 6px 0 0 0;
+    width: 120px;
 }
 
 button:active {
