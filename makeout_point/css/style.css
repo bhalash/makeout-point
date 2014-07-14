@@ -80,6 +80,9 @@ html {
  */
 
 blockquote,
+embed,
+img,
+iframe,
 ol,
 p,
 pre,
@@ -150,7 +153,7 @@ embed,
 img,
 iframe {
     height: auto;
-    margin: 0 0 10px 0;
+    margin: 0 auto;
     max-width: 100%;
 }
 
@@ -509,7 +512,7 @@ nav .button {
  * Article
  */
 
-article { margin: 0 0 50px 0; }
+article { padding: 0 0 35px 0; }
 
 article a {
     color: #ba3434;
@@ -560,6 +563,7 @@ article .article-info {
 .pagination {
     margin: 0 auto;
     overflow: auto;
+    padding: 0 0 35px 0;
     width: 210px;
 }
 
@@ -597,7 +601,7 @@ article .article-info {
 .comments {
     margin-top: 15px;
     overflow: auto;
-    padding: 15px 0 0 0;
+    padding: 15px 0 35px 0;
 }
 
 .comments a {
