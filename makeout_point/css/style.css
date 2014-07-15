@@ -525,6 +525,11 @@ article .article-title a:hover {
 }
 
 article .article-info {
+    font-size: 0.79em;
+
+}
+
+article .article-info {
     margin-bottom: 20px;
 }
 
