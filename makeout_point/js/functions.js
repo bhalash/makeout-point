@@ -9,27 +9,37 @@ function testSmartphone() {
     $('body').remove('.' + mob);
 }
 
-function openMenu(obj, btn) {
+function openMenu(button) {
     // Same code in closeMenu(). I don't want to animate menu on phones.
     // It looks juddery, depending on the handset. 
+    var wrap = (button.hasClass('menu-button')) ? '.menu-wrap' : '.comments-wrap';
+
     if (!isSmartphone) {
-        $(obj).slideDown();
+        $(wrap).slideDown();
+
+        if ($(button).hasClass('comments-button'))
+            $('body,html').animate({'scrollTop' : $(document).height()}, 400);
     } else {
-        $(obj).toggle();
+        $(wrap).toggle();
     }
 
-    $(btn).css('background-color', '#ba3434');
+    if (button.hasClass('button'))
+        $(button).css('background-color', '#ba3434');
+
     menuIsOpen = true;
 }
 
-function closeMenu(obj, btn) {
+function closeMenu(button) {
+    var wrap = (button.hasClass('menu-button')) ? '.menu-wrap' : '.comments-wrap';
+
     if (!isSmartphone) {
-        $(obj).slideUp();
+        $(wrap).slideUp();
     } else {
-        $(obj).toggle();
+        $(wrap).toggle();
     }
 
-    $(btn).css('background-color', '#343537');
+    if (button.hasClass('button'))
+        $(button).css('background-color', '#343537');
     menuIsOpen = false;
 }
 
@@ -41,23 +51,17 @@ $(function() {
     
     testSmartphone();
 
-    // Pop open the menu if the comments link was followed.
-    if (document.URL.indexOf('#comments') >= 0)
-        openMenu('.comments .wrap', $(this));
-});
-
-$('nav .button').click(function() {
-    if (!menuIsOpen) {
-        openMenu('nav .wrap', $(this));
-    } else {
-        closeMenu('nav .wrap', $(this));
+    // Opens the page at the comments if the comments link was followed.
+    if (document.URL.indexOf('#comments') >= 0) {
+        $('.comments-wrap').css('display', 'initial');
+        $('body,html').animate({'scrollTop' : $(document).height()}, 400);
     }
 });
 
-$('.comments .button').click(function() {
+$('.comments-button, .menu-button').click(function() {
     if (!menuIsOpen) {
-        openMenu('.comments .wrap', $(this));
+        openMenu($(this));
     } else {
-        closeMenu('.comments .wrap', $(this));
+        closeMenu($(this));
     }
 });

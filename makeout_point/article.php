@@ -7,7 +7,7 @@
              in <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a>
             <?php if (comments_open()) : ?>
                 <span>
-                    <a href="#comment"><?php echo mp_article_total_comments(); ?> 
+                    <a class="comments-button" href="#comment"><?php echo mp_article_total_comments(); ?> 
                     <?php if (mp_article_total_comments() != 1) : ?>
                         comments</a>
                     <?php else : ?>
@@ -21,8 +21,8 @@
     <?php if (comments_open()) : ?>
     <!-- #comment -->
     <section class="comments">
-        <div class="button"><a href="javascript:void(0)"></a></div>
-        <div class="wrap">
+        <div class="button comments-button"><a href="javascript:void(0)"></a></div>
+        <div class="wrap comments-wrap">
             <div class="menu">
                 <?php if(has_comments()): ?>
                     <h5 class="comment-info">
