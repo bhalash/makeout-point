@@ -40,6 +40,10 @@ $(function() {
     });    
     
     testSmartphone();
+
+    // Pop open the menu if the comments link was followed.
+    if (document.URL.indexOf('#comments') != 0)
+        openMenu('.comments .wrap', $(this));
 });
 
 $('nav .button').click(function() {

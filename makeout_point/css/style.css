@@ -528,6 +528,14 @@ article .article-info {
     margin-bottom: 20px;
 }
 
+article .article-info p {
+    overflow: auto;
+}
+
+article .article-info span {
+    float: right;
+}
+
 /*
  * Pagination
  */
@@ -598,6 +606,11 @@ article .article-info {
     background-color: #f4b44f;
     margin: 0 0 10px 0;
     padding: 10px;
+}
+
+.comment-info a,
+.comment-info a:hover {
+    color: inherit;
 }
 
 .comment-name {

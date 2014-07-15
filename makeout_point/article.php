@@ -5,20 +5,29 @@
             by <a href="mailto:<?php echo user_authed_email(); ?>"><?php echo article_author(); ?></a>
              on <time datetime="<?php echo article_date(); ?>"><?php echo article_date(); ?></time>
              in <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a>
+            <?php if (comments_open()) : ?>
+                <span>
+                    <?php if (total_comments() == 1) : ?>
+                        <a href="#comments"><?php echo total_comments(); ?> comment</a>
+                    <?php else : ?>
+                        <a href="#comments"><?php echo total_comments(); ?> comments</a>
+                    <?php endif; ?>
+                </span>
+            <?php endif; ?>
          </p>
         <?php echo article_markdown(); ?>
     </article>
-    <?php if(comments_open()): ?>
+    <?php if (comments_open()) : ?>
     <section class="comments">
         <div class="button"><a href="javascript:void(0)"></a></div>
         <div class="wrap">
             <div class="menu">
                 <?php if(has_comments()): ?>
-                    <h5 class="comment-info">
+                    <h5 class="comment-info"><a href="#comments">
                     <?php if (total_comments() == 1) : ?>
-                        <?php echo total_comments(); ?> comment</h5>
+                        <?php echo total_comments(); ?> comment</a></h5>
                     <?php else : ?>
-                        <?php echo total_comments(); ?> comments</h5>
+                        <?php echo total_comments(); ?> comments</a></h5>
                     <?php endif; ?>
                     <ul class="commentlist">
                         <?php while(comments()): ?>
