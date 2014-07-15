@@ -7,10 +7,11 @@
              in <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a>
             <?php if (comments_open()) : ?>
                 <span>
-                    <?php if (total_comments() == 1) : ?>
-                        <a href="#comments"><?php echo total_comments(); ?> comment</a>
+                    <a href="#comment"><?php echo mp_article_total_comments(); ?> 
+                    <?php if (mp_article_total_comments() != 1) : ?>
+                        comments</a>
                     <?php else : ?>
-                        <a href="#comments"><?php echo total_comments(); ?> comments</a>
+                        comment</a>
                     <?php endif; ?>
                 </span>
             <?php endif; ?>
@@ -18,16 +19,18 @@
         <?php echo article_markdown(); ?>
     </article>
     <?php if (comments_open()) : ?>
+    <!-- #comment -->
     <section class="comments">
         <div class="button"><a href="javascript:void(0)"></a></div>
         <div class="wrap">
             <div class="menu">
                 <?php if(has_comments()): ?>
-                    <h5 class="comment-info"><a href="#comments">
-                    <?php if (total_comments() == 1) : ?>
-                        <?php echo total_comments(); ?> comment</a></h5>
+                    <h5 class="comment-info">
+                        <?php echo mp_article_total_comments(); ?> 
+                    <?php if (mp_article_total_comments() != 1) : ?>
+                        comments</h5>
                     <?php else : ?>
-                        <?php echo total_comments(); ?> comments</a></h5>
+                        comment</h5>
                     <?php endif; ?>
                     <ul class="commentlist">
                         <?php while(comments()): ?>

@@ -8,10 +8,11 @@
              in <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a>
             <?php if (comments_open()) : ?>
                 <span>
-                    <?php if (total_comments() == 1) : ?>
-                        <a href="<?php echo article_url(); ?>#comments"><?php echo total_comments(); ?> comment</a>
+                    <a href="<?php echo article_url(); ?>#comments"><?php echo mp_article_total_comments(); ?>
+                    <?php if (mp_article_total_comments() != 1) : ?>
+                        comments</a>
                     <?php else : ?>
-                        <a href="<?php echo article_url(); ?>#comments"><?php echo total_comments(); ?> comments</a>
+                        comment</a>
                     <?php endif; ?>
                 </span>
             <?php endif; ?>
