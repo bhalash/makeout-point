@@ -43,6 +43,13 @@ function closeMenu(button) {
     menuIsOpen = false;
 }
 
+function initialMenuOpen() {
+    $('.comments-wrap').css('display', 'block');
+    $('body,html').animate({'scrollTop' : $(document).height()}, 400);
+    $('.comments .comments-button').css('background-color', '#ba3434');
+    menuIsOpen = true;
+}
+
 $(function() {
     // For google-code-prettify
     $('pre').each(function() {
@@ -52,12 +59,8 @@ $(function() {
     testSmartphone();
 
     // Opens the page at the comments if the comments link was followed.
-    if (document.URL.indexOf('#comments') >= 0) {
-        $('.comments-wrap').css('display', 'block');
-        $('body,html').animate({'scrollTop' : $(document).height()}, 400);
-        $('.comments .comments-button').css('background-color', '#ba3434');
-        menuIsOpen = true;
-    }
+    if (document.URL.indexOf('#comments') >= 0)
+        initialMenuOpen();
 });
 
 $('.comments-button, .menu-button').click(function() {
