@@ -55,7 +55,7 @@ $(function() {
     if (document.URL.indexOf('#comments') >= 0) {
         $('.comments-wrap').css('display', 'block');
         $('body,html').animate({'scrollTop' : $(document).height()}, 400);
-        $('.comments-button').css('background-color', '#ba3434');
+        $('.comments .comments-button').css('background-color', '#ba3434');
         menuIsOpen = true;
     }
 });
