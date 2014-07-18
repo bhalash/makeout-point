@@ -64,7 +64,7 @@
                         <ul class="right">
                             <li><a class="beard" href="http://www.bhalash.com" title="Real Men Wear Beards">Real Men Wear Beards</a></li>
                             <li><a class="facebook" href="http://www.facebook.com" title="Facebook">Facebook</a></li>
-                            <li><a class="linkedin" href="http://www.linkedin.com" title="LinkedIn">LinkedIn</a></li>
+                            <li><a class="labs" href="http://www.091labs.com" title="091 Labs">091 Labs</a></li>
                             <li><a class="rss" href="<?php rss_url(); ?>" title="RSS Feed">RSS Feed</a></li>
                         </ul>
                     <?php endif; ?>
