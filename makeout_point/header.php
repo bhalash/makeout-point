@@ -37,8 +37,6 @@
                         <input id="term" name="term" placeholder="Type and then hit enter to search" tabindex="1" type="search" value="<?php echo search_term(); ?>">
                     </form>
                     <?php if (has_menu_items()) : ?> 
-                        <!-- You can add more items on here after the loop. -->
-                        <!-- Menu items are /totes/ stylable-just set up a class with background image/colour in style.css and add the class. -->
                         <ul class="left">
                             <?php while(menu_items()): ?> 
                                 <li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
@@ -46,21 +44,15 @@
                                 </li>
                             <?php endwhile; ?>
                         </ul>
-                        <!-- Site categories. -->
-                        <!-- You must create a category before you can use it, and a post can only have one category. -->
-                        <!-- Interesting restriction. -->
                         <ul>
                             <?php while(categories()) : ?>
-                                <?php if (category_count() > 0) : ?>
-                                    <li>
-                                        <a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
-                                            <?php echo category_title(); ?> (<?php echo category_count(); ?>)
-                                        </a>
-                                    </li>
-                                <?php endif; ?>
+                                <li>
+                                    <a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
+                                        <?php echo category_title(); ?> (<?php echo category_count(); ?>)
+                                    </a>
+                                </li>
                             <?php endwhile; ?>
                         </ul>
-                        <!-- External hyperlinks. -->
                         <ul class="right">
                             <li><a class="beard" href="http://www.bhalash.com" title="Real Men Wear Beards">Real Men Wear Beards</a></li>
                             <li><a class="facebook" href="http://www.facebook.com" title="Facebook">Facebook</a></li>
