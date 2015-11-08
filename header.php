@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title><?php echo page_title('404: Page not found'); ?> - <?php echo site_name(); ?></title>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/prettify.css'); ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/social.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/style.css'); ?>" />
     <link rel="icon" type="image/png" href="<?php echo theme_url('img/favicon.png'); ?>" />
     <meta property="og:title" content="<?php echo site_name(); ?>">
