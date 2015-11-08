@@ -3,59 +3,48 @@
  * -----------------------------------------------------------------------------
  */
 
-article { padding: 0 0 35px 0; }
+article {
+    padding-bottom: 2rem;
+    
+    a {
+        color: palette(anchor,red);
+        font-weight: bold;
 
-article a {
-    color: #ba3434;
-    font-weight: bold;
-}
+        &:hover {
+            // color: inherit;
+        }
 
-article a img {
-    border: 2px solid #343537;
-    box-sizing: border-box;
-}
+        img {
+            border: 0.2rem solid palette(anchor, grey);
+            box-sizing: border-box;
+        }
+    }
 
-article a:hover { color: #ca4343; }
-article blockquote { font-size: 0.89em; }
+    ol, ul {
+        margin-left: 2rem;
+    }
 
-article ol,
-article ul {
-    margin-left: 30px;
-}
+    .article-title {
+        border-bottom: 0.1rem solid palette(anchor, grey);
+        box-sizing: border-box;
+        padding: 0 0 0.2rem 0;
+        text-align: left;
+    }
 
-/*
- * Post Title and Author Info
- */
+    .article-title a {
+        color: palette(anchor, grey);
+        text-decoration: none;
+    }
 
-article .article-title {
-    border-bottom: 2px solid #343537;
-    box-sizing: border-box;
-    padding: 0 0 3px 0;
-    text-align: left;
-}
+    .article-title a:hover {
+        color: palette(anchor, yellow);
+    }
 
-article .article-title a {
-    color: #343537;
-    text-decoration: none;
-}
+    .article-info p {
+        overflow: auto;
+    }
 
-article .article-title a:hover {
-    color: #F4B44F;
-}
-
-article .article-info {
-    font-size: 0.79em;
-    margin-top: 3px;
-}
-
-article .article-info {
-    margin-bottom: 20px;
-}
-
-article .article-info p {
-    overflow: auto;
-}
-
-article .article-info span {
-    float: right;
+    .article-info span {
+        float: right;
+    }
 }
