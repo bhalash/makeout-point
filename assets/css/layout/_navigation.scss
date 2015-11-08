@@ -1,0 +1,38 @@
+/**
+ * Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+.pagination {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 0 35px 0;
+    width: 210px;
+}
+
+.pagination a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.pagination a:hover {
+    background: #e24a4a;
+    text-decoration: none;
+}
+
+.pagination a:active {
+    background: #ba3434; 
+}
+
+.pagination span {
+    background: #343537;
+    color: #fff;
+    font-size: 0.85em;
+    text-align: center;
+    width: 100px;
+}
+
+.pagination .previous { float: left; }
+.pagination .next { float: right; }

@@ -1,0 +1,20 @@
+table {
+    width: 75%;
+}
+
+td, th {
+    color: #343537;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace; 
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    color: #fff;
+    background: #343537;
+}
+
+tr:nth-child(even) { 
+    background: #f4b44f; 
+}
+

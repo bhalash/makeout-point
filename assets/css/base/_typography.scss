@@ -1,0 +1,30 @@
+/**
+ * Headline Items
+ * -----------------------------------------------------------------------------
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #343537;
+    font-family: 2.75em 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+h2 { font-size: 2.25em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.65em; }
+h5 { font-size: 1.50em; } 
+h6 { font-size: 1.35em; }
+
+a, del, em, span, sub, sup, strong, time {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+blockquote, input, label, li, option, p, select { 
+    color: #343537;
+    font: 0.95em 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    line-height: 1.1em;
+    text-align: left;
+}

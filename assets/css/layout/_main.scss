@@ -1,0 +1,11 @@
+/**
+ * Main Content Container
+ * -----------------------------------------------------------------------------
+ */
+
+.content {
+    margin: 0 auto;
+    /* To stop smear on gigantor screen setups. */
+    max-width: 655rem;
+    top: 0;
+}

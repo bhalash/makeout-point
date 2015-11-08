@@ -1,0 +1,45 @@
+/**
+ * Buttons
+ * -----------------------------------------------------------------------------
+ */
+
+button {
+    border: 1px solid #fff;
+    color: #fff;
+    background: #343537;
+    border-radius: 0;
+    float: left;
+    height: 40px;
+    margin: 6px 0 0 0;
+    width: 120px;
+}
+
+button:active {
+    background: #ba3434; 
+}
+
+/* Button and wrap for drop-down menus. */
+.button {
+    border-radius: 50%;
+    height: 50px;
+    margin: 0 auto;
+    /* So the arrow doesn't quite touch the button. */ 
+    margin-bottom: 2px;
+    width: 50px;
+}
+
+.button a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+nav .button {
+    background: #343537 url('../img/menu_burger.png') no-repeat center center;
+    background-size: 45% auto;
+}
+
+.comments .button {
+    background: #343537 url('../img/chat_bubble.svg') no-repeat center center;
+    background-size: 45% auto;
+}

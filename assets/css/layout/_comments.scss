@@ -1,0 +1,71 @@
+/**
+ * Comments
+ * -----------------------------------------------------------------------------
+ */
+
+.comments {
+    margin-top: 15px;
+    overflow: auto;
+    padding: 15px 0 35px 0;
+}
+
+.comments a {
+    color: #ba3434;
+    font-weight: bold;
+}
+
+.comments a img {
+    border: 2px solid #343537;
+    box-sizing: border-box;
+}
+
+.comments a:hover {
+    color: #ca4343;
+}
+
+.comments span {
+    font-weight: bold;
+}
+
+.comment-info {
+    background-color: #f4b44f;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+.comment-info a,
+.comment-info a:hover {
+    color: inherit;
+}
+
+.comment-name {
+    /* Comment author's name. */
+    margin-bottom: 0;
+}
+
+/*
+ * Comments Unordered List
+ */
+
+.comments ul {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 96%;
+}
+
+.comments li {
+    background: #fff;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0 0 13px 0;
+    min-height: 40px;
+    padding: 7px;
+}
+
+.comments .comment-date {
+    font-style: italic;
+    font-size: 0.7em;
+    margin: 0 0 3px 0;
+}
+

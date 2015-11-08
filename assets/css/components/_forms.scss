@@ -1,0 +1,41 @@
+/**
+ * Forms
+ * -----------------------------------------------------------------------------
+ */
+
+form {
+    margin: 0 auto;
+    padding: 0 0 25px 0;
+    width: 96%;
+}
+
+input, textarea {
+    /* Removes rounded corners and borders on iOS devices. */
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-sizing: border-box;
+    border: 0;
+    display: inline-block;
+    resize: none;
+    padding: 5px;
+}
+
+input {
+    box-sizing: border-box;
+    margin: 0 0 8px 0;
+    padding: 3px;
+    width: 49.5%;
+
+    &[name="name"] {
+        float: left;
+    }
+
+    &[name="email"] { 
+        float: right;
+    }
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+}

@@ -1,0 +1,65 @@
+/*
+ * Site Header
+ */
+
+header a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+header h4 {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 90%;
+    /* !important-this centers the text verticall and spaces rest of header. */
+    padding: 90px 0 90px 0;
+    text-align: center;
+}
+
+header .banner {
+    background: url('../img/header.jpg') no-repeat left top;
+    background-size: cover;
+}
+
+header .title {
+    /* This is a black mask over the above background image. */
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+}
+
+/* Logo */
+header .logo-wrap {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: -37.5px;
+    padding: 5px;
+    width: 70px;
+}
+
+header .logo {
+    /* Avatar icon goes here. */
+    background: #55acee url('../img/social/twitter.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 100%;
+    transition: 0.4s background;
+    width: 100%;
+}
+
+header .logo:hover {
+    /* Whatever social icon you want goes here. See img/social for the rest. */
+    background: url('../img/avatar.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+header .logo a {
+    border-radius: 50%;
+}
+

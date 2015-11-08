@@ -1,0 +1,96 @@
+/*
+ * Navigation Menu
+ */
+
+.wrap {
+    /* This is the arrow below the menu button when the menu is open. */
+    /* Make sure the wrapped */
+    background: #fff url('../img/inset_top_arrow.svg') no-repeat center center;
+    background-size: auto 100%; 
+    display: none;
+    margin: 0 0 10px 0;
+    padding: 20px 0 0 0;
+}
+
+.menu {
+    background: #343537;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+nav {
+    margin: 15px 0 15px 0;
+
+    a, span {
+        display: block;
+        height: 100%;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    form {
+        padding-bottom: 0;
+        width: 100%;
+
+        input {
+            -webkit-appearance: none;
+            -webkit-border-radius: 0;
+            box-sizing: border-box;
+            height: 40px;
+            padding: 0 0 0 3px;
+            width: 100%;
+        }
+    }
+
+    .menu {
+        overflow: auto;
+    }
+
+    ul {
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 32.5%;
+    }
+
+    li {
+        background: #f4b44f;
+        list-style-type: none;
+        margin: 0 0 5px 0;
+        overflow: hidden;
+        width: 100%;
+
+        &:hover { background: #ffc76f; }
+        &:active { background: #ca8e2f; }
+
+        /* Optional highlight colour. So much orange gets dull. */
+        .list-alt { background-color: #cee3f8; }
+        .list-alt:hover { background-color: #E6EFF7; }
+        .list-alt:active { background-color: #A3CDF7; }
+
+        a img {
+            display: block;
+            height: auto;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        a, span {
+            box-sizing: border-box;
+            color: #343537;
+            font-size: 1.03em;
+            font-weight: bold;
+            line-height: 1.2em;
+            padding: 10px;
+            text-align: left;
+        }
+    }
+
+    .left{ float: left; }
+    .right { float: right; }
+}
+
