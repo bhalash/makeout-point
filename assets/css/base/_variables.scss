@@ -30,11 +30,11 @@ $vspace: modular-scale(1, $mod-scale--size, $mod-scale--ratio);
  */
 
 $anchor-colours: sh-add-palettes((
-    blue: (
-        base: #00A3F5
-    ),
-    rmwb: (
-        base: #343537
+    anchor: (
+        grey: #343537,
+        blue: #00a3f5,
+        red: #ba3434,
+        yellow: #f4b44f,
     )
 ));
 
