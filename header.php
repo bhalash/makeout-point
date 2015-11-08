@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title><?php echo page_title('404: Page not found'); ?> - <?php echo site_name(); ?></title>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('css/style.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('assets/css/style.css'); ?>" />
     <link rel="icon" type="image/png" href="<?php echo theme_url('img/favicon.png'); ?>" />
     <meta property="og:title" content="<?php echo site_name(); ?>">
     <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
     <meta property="og:description" content="<?php echo site_description(); ?>">
 </head>
 <body>
-    <header>
+    <header class="head" id="head">
         <div class="banner">
             <div class="title">
                 <h4><a href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a></h4>
@@ -26,7 +26,7 @@
             <div class="logo"><a href="<?php echo twitter_url(); ?>"></a></div>
         </div>
     </header>
-    <section class="content">
+    <main class="content">
         <nav>
             <div class="button menu-button"><a href="javascript:void(0)"></a></div>
             <div class="wrap menu-wrap">
