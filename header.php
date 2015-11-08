@@ -16,7 +16,7 @@
     <meta property="og:site_name" content="<?php echo site_name(); ?>">
     <meta property="og:description" content="<?php echo site_description(); ?>">
 </head>
-<body onload="prettyPrint()">
+<body>
     <header>
         <div class="banner">
             <div class="title">
