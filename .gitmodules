@@ -1,0 +1,3 @@
+[submodule "assets/css/includes/scss-helpers"]
+	path = assets/css/includes/scss-helpers
+	url = git@github.com:bhalash/scss-helpers.git
