@@ -64,7 +64,7 @@ var prefixes = [
 var regex = {
     comments: {
         // Remove block comments from unminified output CSS.
-        match: /^(\/\*|\s\*|\s{3}=).*[\n\r]/mg,
+        match: /^(\/\*(\*|!)|\s\*|\s{3}=).*[\n\r]/mg,
         replace: ''
     }
 };
