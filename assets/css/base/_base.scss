@@ -7,21 +7,13 @@ html {
     font: 100% $font--opensans;
 }
 
-body {
+blockquote, body, li, ol, p, pre, table, ul {
     margin: 0;
 }
 
 blockquote {
-    border-left: 0.4rem solid #343537;
+    border-left: 0.4rem solid palette(anchor, grey);
     padding: 0 0 0 0.4rem;
-}
-
-blockquote, embed, img, iframe, ol, p, pre, table, ul {
-    margin: 0;
-}
-
-li {
-    margin: 0;
 }
 
 a:hover {
