@@ -1,0 +1,47 @@
+/**
+ * Modular Scale Font Sies with the Golden Ratio
+ * -----------------------------------------------------------------------------
+ * @link https://en.wikipedia.org/wiki/Golden_ratio
+ * @link http://www.modularscale.com/
+ * @link http://www.pearsonified.com/typography/
+ */
+
+// 1.6 / golden ratio. $mod-scale--size * $mod-scale--ratio = 1.6 exactly with 
+// Sass's ten-digits-of-precision rounding.
+$mod-scale--size: 0.988854382;
+// Golden ratio.
+$mod-scale--ratio: 1.61803398875;
+
+$font-size--paragraph: modular-scale(1, $mod-scale--size, $mod-scale--ratio);
+$line-height--paragraph: $font-size--paragraph * $mod-scale--ratio;
+
+/**
+ * Default Vertical Space
+ * -----------------------------------------------------------------------------
+ * Decimal size that compiles to REM. I go through the motions of compiling this
+ * through modular scale, but Tl;DR: 1rem/16px.
+ */
+
+$vspace: modular-scale(1, $mod-scale--size, $mod-scale--ratio);
+
+/*
+ * Colors
+ * -----------------------------------------------------------------------------
+ */
+
+$anchor-colours: sh-add-palettes((
+    blue: (
+        base: #00A3F5
+    ),
+    rmwb: (
+        base: #343537
+    )
+));
+
+/*
+ * Typeface Declarations
+ * -----------------------------------------------------------------------------
+ */
+
+$font--opensans: 'Open Sans', Verdana, Geneva, sans-serif, sans-serif;
+$font--sourcecodepro: 'Source Code Pro', 'Courier New', Courier, monospace;

@@ -1,11 +1,19 @@
+/**
+ * Root Rules
+ * -----------------------------------------------------------------------------
+ */
+
+html {
+    font: 100% $font--opensans;
+}
+
 body {
     margin: 0;
-    padding: 0;
 }
 
 blockquote {
-    border-left: 5px solid #343537;
-    padding: 0 0 0 5px;
+    border-left: 0.4rem solid #343537;
+    padding: 0 0 0 0.4rem;
 }
 
 blockquote, embed, img, iframe, ol, p, pre, table, ul {

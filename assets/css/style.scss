@@ -1,5 +1,19 @@
 @import 'includes/scss-helpers/helpers';
 @import 'includes/normalize';
 
-@import 'base/base'
+@import 'base/variables';
+@import 'base/base';
+@import 'base/typography';
 
+@import 'layout/404';
+@import 'layout/head';
+@import 'layout/menu';
+@import 'layout/main';
+@import 'layout/articles';
+@import 'layout/comments';
+
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/tables';
+
+@import 'theme/code';
