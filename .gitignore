@@ -1,15 +1,31 @@
 #################
-# Sublime Text config files
+## Sass and CSS
 #################
 
-# STFP and other plugins
-*.json
-
-# Sass and CSS
 .sass-cache/
 sass/.sass-cache/
-style.css.map
-style.css
+*.css
+*.css.map
+vectors/
+
+#################
+## Minified JS
+#################
+
+assets/js/min/
+*.min.js
+
+#################
+## Node.js Packages
+#################
+
+node_modules/
+
+#################
+## jQuery Library
+#################
+
+jquery-*min.js
 
 #################
 ## Eclipse
@@ -40,7 +56,6 @@ local.properties
 
 # PDT-specific
 .buildpath
-
 
 #################
 ## Visual Studio
