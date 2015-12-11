@@ -9,7 +9,7 @@ if(has_posts()) {
 }
 
 if(has_pagination()) {
-    partial('footer');
+    partial('pagination');
 }
 
 partial('footer');
