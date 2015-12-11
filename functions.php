@@ -14,4 +14,8 @@ function mp_article_total_comments() {
     return Comment::where('post', '=', article_id())->count();
 }
 
+function partial($slug) {
+    include(sprintf('%s/partials/_%s.php', __DIR__, $slug));
+}
+
 ?>
