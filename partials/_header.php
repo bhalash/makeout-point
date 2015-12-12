@@ -11,7 +11,9 @@
     <div class="makeout" id="makeout">
         <header class="header makeout__header" id="head">
             <div class="header__banner">
-                <h4 class="header__title"><a class="header__site-link" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a></h4>
+                <h4 class="header__title">
+                    <a class="header__site-link" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
+                </h4>
             </div>
             <div class="header__logo">
                 <div class="header__logo-wrap">
