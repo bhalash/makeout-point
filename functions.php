@@ -11,6 +11,15 @@ function meta_twitter_href($default = 'bhalash') {
 }
 
 /**
+ * Comment Count Words
+ * -----------------------------------------------------------------------------
+ */
+
+function comment_count() {
+    printf(total_comments . ' ' . total_comments() != 0 ? 'comments' : 'comment');
+}
+
+/**
  * Count Comments
  * -----------------------------------------------------------------------------
  * Anchor returns the /total/ count of comments, not the total count for the
@@ -42,3 +51,4 @@ function partial($partial, $variant = null) {
 }
 
 ?>
+ * @return
