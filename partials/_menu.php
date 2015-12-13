@@ -1,8 +1,8 @@
 <nav class="menu">
-    <div class="button menu__button"><a href="javascript:void(0)"></a></div>
+    <button class="button menu__button"></button>
     <div class="menu__wrap">
         <div class="menu__content">
-            <form class="menu__search form searchform" id="search" action="<?php echo search_url(); ?>" method="post">
+            <form class="menu__search form searchform" id="searchform" action="<?php echo search_url(); ?>" method="post">
                 <fieldset>
                     <input class="menu__input searchform__input" id="term" name="term" placeholder="Type and then hit enter to search" tabindex="1" type="search" value="<?php echo search_term(); ?>">
                 </fieldset>

@@ -17,9 +17,9 @@
             </div>
             <div class="header__logo">
                 <div class="header__logo-wrap">
-                    <a class="header__logo-link" href="<?php meta_twitter_href(); ?>"></a>
+                    <a class="header__logo-link" href="<?php echo site_meta_twitter(); ?>"></a>
                 </div>
             </div>
         </header>
+        <?php partial('menu'); ?>
         <main class="makeout__content">
-            <?php partial('menu'); ?>
