@@ -26,7 +26,7 @@
         border: 0.25rem solid #fff;
         border-radius: 50%;
         margin: -2.25rem auto 1.5rem;
-        transition: 0.4s background;
+        transition: 0.4s background ease-in;
         @include square-flex(4.5rem 1);
 
         &:hover {
