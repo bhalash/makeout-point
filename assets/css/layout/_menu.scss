@@ -2,62 +2,49 @@
  * Navigation Menu
  */
 
-.wrap {
-    /* This is the arrow below the menu button when the menu is open. */
-    /* Make sure the wrapped */
-    background: #fff center/auto 100% no-repeat url('../img/inset_top_arrow.svg');
-    display: none;
-    margin: 0 0 0.5rem 0;
-    padding: 1.25rem 0 0 0;
-}
-
 .menu {
-    background: #343537;
     box-sizing: border-box;
-    margin: 0 auto;
-    padding: 1.25rem;
-}
-
-
-nav {
-    margin: 1rem 0 1rem 0;
 
     a, span {
+        // FIXME
         display: block;
         height: 100%;
     }
 
     a:hover {
+        // FIXME
         text-decoration: none;
     }
 
-    form {
-        padding-bottom: 0;
-        width: 100%;
-
-        input {
-            -webkit-appearance: none;
-            -webkit-border-radius: 0;
-            border-radius: 0;
-            box-sizing: border-box;
-            height: 2.5rem;
-            padding: 0 0 0 0.25rem;
-            width: 100%;
-        }
+    &__content {
+        display: none;
+        background: #343537 center/auto 100% no-repeat url('../img/inset_top_arrow.svg');
+        margin: 1rem 0 1rem 0;
+        padding-top: 1.25rem;
     }
 
-    .menu {
-        overflow: auto;
+    &__toggle {
+        // Remove invisible padding around child button element.
+        font-size: 0;
+        text-align: center;
     }
 
-    ul {
-        display: inline-block;
-        margin: 0 auto;
-        margin-top: 0.5rem;
-        width: 32.5%;
+    &__searchform {
+        // TODO
+        margin-bottom: 0.5rem;
     }
 
-    li {
+    &__submenus {
+        display: flex;
+    }
+
+    &__submenu {
+        flex: 0 1 auto;
+        // FIXME: Why this width?
+        max-width: 32.5%;
+    }
+
+    &__item {
         background: #f4b44f;
         list-style-type: none;
         margin: 0 0 0.25rem 0;
@@ -74,11 +61,12 @@ nav {
 
         /* Optional highlight colour. So much orange gets dull. */
         .list-alt {
-             background-color: #cee3f8;
+            // FIXME
+            background-color: #cee3f8;
 
-             &:hover {
-                 background-color: #E6EFF7;
-             }
+            &:hover {
+                background-color: #E6EFF7;
+            }
 
             &:active {
                  background-color: #A3CDF7;
@@ -86,6 +74,7 @@ nav {
         }
 
         a img {
+            // FIXME
             display: block;
             height: auto;
             margin-bottom: 0;
@@ -93,6 +82,7 @@ nav {
         }
 
         a, span {
+            // FIXME
             box-sizing: border-box;
             color: #343537;
             font-weight: bold;
@@ -100,13 +90,4 @@ nav {
             text-align: left;
         }
     }
-
-    .left{
-        float: left;
-    }
-
-    .right {
-        float: right;
-    }
 }
-
