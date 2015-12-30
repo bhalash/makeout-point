@@ -3,14 +3,20 @@
  * -----------------------------------------------------------------------------
  */
 
+embed, img, iframe {
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+embed, iframe {
+    @media(print) {
+        display: none;
+    }
+}
+
 article {
     padding-bottom: 2rem;
-
-    embed, img, iframe {
-        height: auto;
-        margin: 0 auto;
-        max-width: 100%;
-    }
 
     blockquote {
         border-left: 0.5rem solid palette(anchor, grey);
