@@ -4,9 +4,9 @@ table {
 
 td, th {
     color: #343537;
-    font-family: 'Source Code Pro', 'Courier New', Courier, monospace; 
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    padding: 0.5rem;
     text-align: left;
-    padding: 10px;
 }
 
 th {
@@ -14,7 +14,7 @@ th {
     background: #343537;
 }
 
-tr:nth-child(even) { 
-    background: #f4b44f; 
+tr:nth-child(even) {
+    background: #f4b44f;
 }
 

@@ -3,11 +3,9 @@
  * -----------------------------------------------------------------------------
  */
 
-h1, h2, h3, h4, h5, h6 {
-    color: #343537;
-}
-
 @for $i from 1 through 6 {
+    color: #343537;
+
     h#{$i} {
         $font-size--headline: modular-scale(5 - $i, $mod-scale--size, $mod-scale--ratio);
         $line-height--headline: $font-size--headline * $mod-scale--ratio;
@@ -20,12 +18,7 @@ h1, h2, h3, h4, h5, h6 {
  * -----------------------------------------------------------------------------
  */
 
-// a, del, em, span, sub, sup, strong, time {
-//     font-family: inherit;
-//     font-size: inherit;
-// }
-
-blockquote, input, label, li, option, p, select { 
+blockquote, input, label, li, option, p, select {
     color: #343537;
     text-align: left;
 }

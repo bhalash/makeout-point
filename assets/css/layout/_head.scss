@@ -16,19 +16,18 @@ header h4 {
     color: #fff;
     margin: 0 auto;
     max-width: 90%;
-    /* !important-this centers the text verticall and spaces rest of header. */
-    padding: 90px 0 90px 0;
+    /* !important-this centers the text vertical and spaces rest of header. */
+    padding: 5.5rem 0 5.5rem;
     text-align: center;
 }
 
 header .banner {
-    background: url('../img/header.jpg') no-repeat left top;
-    background-size: cover;
+    background: left top/cover no-repeat url('../img/header.jpg');
 }
 
 header .title {
     /* This is a black mask over the above background image. */
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     height: 100%;
 }
 
@@ -36,30 +35,27 @@ header .title {
 header .logo-wrap {
     background-color: #fff;
     border-radius: 50%;
-    height: 70px;
+    height: 4.5rem;
     margin: 0 auto;
-    margin-top: -37.5px;
-    padding: 5px;
-    width: 70px;
+    margin-top: -2.25rem;
+    padding: 0.25rem;
+    width: 4.5rem;
 }
 
 header .logo {
     /* Avatar icon goes here. */
-    background: #55acee url('../img/social/twitter.png') no-repeat center center;
-    background-size: cover;
+    background: #55acee center/cover no-repeat url('../img/social/twitter.png');
     border-radius: 50%;
     height: 100%;
     transition: 0.4s background;
     width: 100%;
-}
 
-header .logo:hover {
-    /* Whatever social icon you want goes here. See img/social for the rest. */
-    background: url('../img/avatar.jpg') no-repeat center center;
-    background-size: cover;
-}
+    &:hover {
+        /* Whatever social icon you want goes here. See img/social for the rest. */
+        background: center/cover no-repeat url('../img/avatar.png');
+    }
 
-header .logo a {
-    border-radius: 50%;
+    a {
+        border-radius: 100%;
+    }
 }
-
