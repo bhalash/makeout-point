@@ -2,60 +2,43 @@
  * Site Header
  */
 
-header a {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-header a:hover {
-    text-decoration: none;
-}
-
-header h4 {
-    color: #fff;
-    margin: 0 auto;
-    max-width: 90%;
-    /* !important-this centers the text vertical and spaces rest of header. */
-    padding: 5.5rem 0 5.5rem;
-    text-align: center;
-}
-
-header .banner {
-    background: left top/cover no-repeat url('../img/header.jpg');
-}
-
-header .title {
-    /* This is a black mask over the above background image. */
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
-}
-
-/* Logo */
-header .logo-wrap {
-    background-color: #fff;
-    border-radius: 50%;
-    height: 4.5rem;
-    margin: 0 auto;
-    margin-top: -2.25rem;
-    padding: 0.25rem;
-    width: 4.5rem;
-}
-
-header .logo {
-    /* Avatar icon goes here. */
-    background: #55acee center/cover no-repeat url('../img/social/twitter.png');
-    border-radius: 50%;
-    height: 100%;
-    transition: 0.4s background;
-    width: 100%;
-
-    &:hover {
-        /* Whatever social icon you want goes here. See img/social for the rest. */
-        background: center/cover no-repeat url('../img/avatar.png');
+.header {
+    &__banner {
+        background: center/cover no-repeat url('../img/header.jpg');
     }
 
-    a {
-        border-radius: 100%;
+    &__title {
+        background: rgba(0,0,0,0.25);
+        height: 100%;
+        margin: 0;
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    &__title-link {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    &__logo {
+        // FIXME: Replace image with vector.
+        background: #55acee center/cover no-repeat url('../img/social/twitter.png');
+        border: 0.25rem solid #fff;
+        border-radius: 50%;
+        margin: -2.25rem auto 1.5rem;
+        transition: 0.4s background;
+        @include square-flex(4.5rem 1);
+
+        &:hover {
+            // FIXME: Programmatically get avatar from Twitter.
+            background-image: url('../img/avatar.png');
+        }
+    }
+
+    &__logo-link {
+        display: block;
+        @include square-flex(100% 1);
     }
 }
