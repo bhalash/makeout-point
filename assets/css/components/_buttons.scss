@@ -4,42 +4,29 @@
  */
 
 button {
+    -webkit-appearance: none;
     border: 1px solid #fff;
-    color: #fff;
-    background: #343537;
-    border-radius: 0;
-    float: left;
-    height: 40px;
-    margin: 6px 0 0 0;
-    width: 120px;
-}
+    border-radius: 50%;
+    padding: 0;
 
-button:active {
-    background: #ba3434; 
+    &:active {
+        background-color: #ba3434;
+        outline: 0;
+    }
 }
 
 /* Button and wrap for drop-down menus. */
 .button {
-    border-radius: 50%;
-    height: 50px;
-    margin: 0 auto;
-    /* So the arrow doesn't quite touch the button. */ 
-    margin-bottom: 2px;
-    width: 50px;
-}
+    background: #343537 center/45% auto no-repeat;
+    @include square-flex(3.5rem 1);
 
-.button a {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
+    &--menu {
+        background-image: url('../img/menu_burger.png');
+        // FIXME: So the arrow doesn't quite touch the button.
+        // margin-bottom: 0.4rem;
+    }
 
-nav .button {
-    background: #343537 url('../img/menu_burger.png') no-repeat center center;
-    background-size: 45% auto;
-}
-
-.comments .button {
-    background: #343537 url('../img/chat_bubble.svg') no-repeat center center;
-    background-size: 45% auto;
+    &--comments {
+        background-image: url('../img/chat_bubble.svg');
+    }
 }
