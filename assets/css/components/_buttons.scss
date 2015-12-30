@@ -18,7 +18,7 @@ button {
 /* Button and wrap for drop-down menus. */
 .button {
     background: #343537 center/45% auto no-repeat;
-    @include square-flex(3.5rem 1);
+    @include square-flex(3.25rem 1);
 
     &--menu {
         background-image: url('../img/menu_burger.png');
