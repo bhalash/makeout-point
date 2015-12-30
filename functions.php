@@ -68,7 +68,8 @@ function pluralize_wrap($word, $count) {
 /**
  * Fetch Partial
  * -----------------------------------------------------------------------------
- * Output post header information (category and date).
+ * Output post header information (category and date). Emulates the WordPress
+ * get_template_part method.
  *
  * @param   string      $partial        Partial file.
  * @param   string      $variant        File variant.

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title><?php echo page_title('404: Page not found'); ?> - <?php echo site_name(); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo theme_url('assets/css/style.css'); ?>" />
     <link rel="icon" type="image/png" href="<?php echo theme_url('img/favicon.png'); ?>" />
