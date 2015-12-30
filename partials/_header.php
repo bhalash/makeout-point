@@ -15,8 +15,8 @@
                     <a class="header__title-link" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
                 </h3>
             </div>
-            <div class="header__logo">
-                <a class="header__logo-link" href="<?php echo site_meta_twitter(); ?>"></a>
+            <div class="header__twitter">
+                <a class="header__twitter-link" href="<?php echo site_meta_twitter(); ?>"></a>
             </div>
         </header>
         <?php partial('menu'); ?>

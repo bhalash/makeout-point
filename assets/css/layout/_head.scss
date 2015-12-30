@@ -2,6 +2,8 @@
  * Site Header
  */
 
+
+
 .header {
     &__banner {
         background: center/cover no-repeat url('../img/header.jpg');
@@ -20,7 +22,7 @@
         width: 100%;
     }
 
-    &__logo {
+    &__twitter {
         // FIXME: Replace image with vector.
         background: #55acee center/cover no-repeat url('../img/social/twitter.png');
         border: 0.35rem solid #fff;
@@ -35,7 +37,7 @@
         }
     }
 
-    &__logo-link {
+    &__twitter-link {
         display: block;
         @include square-flex(100% 1);
     }
