@@ -5,7 +5,18 @@
 
 article {
     padding-bottom: 2rem;
-    
+
+    embed, img, iframe {
+        height: auto;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    blockquote {
+        border-left: 0.5rem solid palette(anchor, grey);
+        padding: 0 0 0 0.5rem;
+    }
+
     a {
         color: palette(anchor,red);
         font-weight: bold;
