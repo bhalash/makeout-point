@@ -1,4 +1,4 @@
-<nav class="menu">
+<nav class="makeout__menu menu">
     <?php // Button goes outside the hidden parts. ?>
     <div class="menu__toggle">
         <button class="button button--menu"></button>
