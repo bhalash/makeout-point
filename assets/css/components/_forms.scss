@@ -25,13 +25,14 @@ input, textarea {
     -webkit-border-radius: 0;
     border: 0;
     box-sizing: border-box;
-    display: inline-block;
+    // FIXME
+    // display: inline-block;
     padding: 0.25rem;
-    resize: none;
 }
 
 textarea {
     height: 9.5rem;
+    resize: none;
     width: 100%;
 }
 
@@ -42,10 +43,12 @@ input {
     width: 49.5%;
 
     &[name="name"] {
+        // FIXME
         float: left;
     }
 
     &[name="email"] {
+        // FIXME
         float: right;
     }
 }
