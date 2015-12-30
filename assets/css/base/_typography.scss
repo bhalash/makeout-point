@@ -4,12 +4,14 @@
  */
 
 @for $i from 1 through 6 {
-    color: #343537;
-
     h#{$i} {
+
         $font-size--headline: modular-scale(5 - $i, $mod-scale--size, $mod-scale--ratio);
         $line-height--headline: $font-size--headline * $mod-scale--ratio;
-        @include font-size($font-size--headline);
+
+        color: #343537;
+        font-size: rem($font-size--headline);
+        line-height: rem($line-height--headline);
     }
 }
 
